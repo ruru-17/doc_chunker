@@ -1,0 +1,2293 @@
+{
+    "num_chunks": 572,
+    "chunks": [
+        {
+            "chunk_id": 0,
+            "text": "1 2 0 2"
+        },
+        {
+            "chunk_id": 1,
+            "text": "n u J\n\n1 2\n\n]"
+        },
+        {
+            "chunk_id": 2,
+            "text": "V C . s c [\n\n2 v 8 4 3 5 1 . 3 0 1 2 : v i X r a"
+        },
+        {
+            "chunk_id": 3,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for Deep Learning Based Document Image Analysis\n\nZejiang Shen1 ((cid:0)), Ruochen Zhang2, Melissa Dell3, Benjamin Charles Germain Lee4, Jacob Carlson3, and Weining Li5"
+        },
+        {
+            "chunk_id": 4,
+            "text": "1 Allen Institute for AI shannons@allenai.org 2 Brown University ruochen zhang@brown.edu 3 Harvard University {melissadell,jacob carlson}@fas.harvard.edu 4 University of Washington bcgl@cs.washington.edu 5 University of Waterloo w422li@uwaterloo.ca"
+        },
+        {
+            "chunk_id": 5,
+            "text": "Abstract. Recent advances in document image analysis (DIA) have been primarily driven by the application of neural networks. Ideally, research outcomes could be easily deployed in production and extended for further investigation. However, various"
+        },
+        {
+            "chunk_id": 6,
+            "text": "ysis (DIA) have been primarily driven by the application of neural networks. Ideally, research outcomes could be easily deployed in production and extended for further investigation. However, various factors like loosely organized codebases and"
+        },
+        {
+            "chunk_id": 7,
+            "text": "application of neural networks. Ideally, research outcomes could be easily deployed in production and extended for further investigation. However, various factors like loosely organized codebases and sophisticated model con\ufb01gurations complicate the"
+        },
+        {
+            "chunk_id": 8,
+            "text": "outcomes could be easily deployed in production and extended for further investigation. However, various factors like loosely organized codebases and sophisticated model con\ufb01gurations complicate the easy reuse of im- portant innovations by a wide"
+        },
+        {
+            "chunk_id": 9,
+            "text": "and extended for further investigation. However, various factors like loosely organized codebases and sophisticated model con\ufb01gurations complicate the easy reuse of im- portant innovations by a wide audience. Though there have been on-going e\ufb00orts to"
+        },
+        {
+            "chunk_id": 10,
+            "text": "rious factors like loosely organized codebases and sophisticated model con\ufb01gurations complicate the easy reuse of im- portant innovations by a wide audience. Though there have been on-going e\ufb00orts to improve reusability and simplify deep learning"
+        },
+        {
+            "chunk_id": 11,
+            "text": "and sophisticated model con\ufb01gurations complicate the easy reuse of im- portant innovations by a wide audience. Though there have been on-going e\ufb00orts to improve reusability and simplify deep learning (DL) model development in disciplines like natural"
+        },
+        {
+            "chunk_id": 12,
+            "text": "e easy reuse of im- portant innovations by a wide audience. Though there have been on-going e\ufb00orts to improve reusability and simplify deep learning (DL) model development in disciplines like natural language processing and computer vision, none of"
+        },
+        {
+            "chunk_id": 13,
+            "text": "audience. Though there have been on-going e\ufb00orts to improve reusability and simplify deep learning (DL) model development in disciplines like natural language processing and computer vision, none of them are optimized for challenges in the domain of"
+        },
+        {
+            "chunk_id": 14,
+            "text": "o improve reusability and simplify deep learning (DL) model development in disciplines like natural language processing and computer vision, none of them are optimized for challenges in the domain of DIA. This represents a major gap in the existing"
+        },
+        {
+            "chunk_id": 15,
+            "text": "(DL) model development in disciplines like natural language processing and computer vision, none of them are optimized for challenges in the domain of DIA. This represents a major gap in the existing toolkit, as DIA is central to academic research"
+        },
+        {
+            "chunk_id": 16,
+            "text": "al language processing and computer vision, none of them are optimized for challenges in the domain of DIA. This represents a major gap in the existing toolkit, as DIA is central to academic research across a wide range of disciplines in the social"
+        },
+        {
+            "chunk_id": 17,
+            "text": "of them are optimized for challenges in the domain of DIA. This represents a major gap in the existing toolkit, as DIA is central to academic research across a wide range of disciplines in the social sciences and humanities. This paper introduces"
+        },
+        {
+            "chunk_id": 18,
+            "text": "ain of DIA. This represents a major gap in the existing toolkit, as DIA is central to academic research across a wide range of disciplines in the social sciences and humanities. This paper introduces LayoutParser, an open-source library for"
+        },
+        {
+            "chunk_id": 19,
+            "text": "n the existing toolkit, as DIA is central to academic research across a wide range of disciplines in the social sciences and humanities. This paper introduces LayoutParser, an open-source library for streamlining the usage of DL in DIA research and"
+        },
+        {
+            "chunk_id": 20,
+            "text": "emic research across a wide range of disciplines in the social sciences and humanities. This paper introduces LayoutParser, an open-source library for streamlining the usage of DL in DIA research and applica- tions. The core LayoutParser library"
+        },
+        {
+            "chunk_id": 21,
+            "text": "es in the social sciences and humanities. This paper introduces LayoutParser, an open-source library for streamlining the usage of DL in DIA research and applica- tions. The core LayoutParser library comes with a set of simple and intuitive"
+        },
+        {
+            "chunk_id": 22,
+            "text": "This paper introduces LayoutParser, an open-source library for streamlining the usage of DL in DIA research and applica- tions. The core LayoutParser library comes with a set of simple and intuitive interfaces for applying and customizing DL models"
+        },
+        {
+            "chunk_id": 23,
+            "text": "e library for streamlining the usage of DL in DIA research and applica- tions. The core LayoutParser library comes with a set of simple and intuitive interfaces for applying and customizing DL models for layout de- tection, character recognition, and"
+        },
+        {
+            "chunk_id": 24,
+            "text": "esearch and applica- tions. The core LayoutParser library comes with a set of simple and intuitive interfaces for applying and customizing DL models for layout de- tection, character recognition, and many other document processing tasks. To promote"
+        },
+        {
+            "chunk_id": 25,
+            "text": "library comes with a set of simple and intuitive interfaces for applying and customizing DL models for layout de- tection, character recognition, and many other document processing tasks. To promote extensibility, LayoutParser also incorporates a"
+        },
+        {
+            "chunk_id": 26,
+            "text": "e interfaces for applying and customizing DL models for layout de- tection, character recognition, and many other document processing tasks. To promote extensibility, LayoutParser also incorporates a community platform for sharing both pre-trained"
+        },
+        {
+            "chunk_id": 27,
+            "text": "els for layout de- tection, character recognition, and many other document processing tasks. To promote extensibility, LayoutParser also incorporates a community platform for sharing both pre-trained models and full document digiti- zation pipelines."
+        },
+        {
+            "chunk_id": 28,
+            "text": "and many other document processing tasks. To promote extensibility, LayoutParser also incorporates a community platform for sharing both pre-trained models and full document digiti- zation pipelines. We demonstrate that LayoutParser is helpful for"
+        },
+        {
+            "chunk_id": 29,
+            "text": "mote extensibility, LayoutParser also incorporates a community platform for sharing both pre-trained models and full document digiti- zation pipelines. We demonstrate that LayoutParser is helpful for both lightweight and large-scale digitization"
+        },
+        {
+            "chunk_id": 30,
+            "text": "ates a community platform for sharing both pre-trained models and full document digiti- zation pipelines. We demonstrate that LayoutParser is helpful for both lightweight and large-scale digitization pipelines in real-word use cases. The library is"
+        },
+        {
+            "chunk_id": 31,
+            "text": "ained models and full document digiti- zation pipelines. We demonstrate that LayoutParser is helpful for both lightweight and large-scale digitization pipelines in real-word use cases. The library is publicly available at"
+        },
+        {
+            "chunk_id": 32,
+            "text": "document digiti- zation pipelines. We demonstrate that LayoutParser is helpful for both lightweight and large-scale digitization pipelines in real-word use cases. The library is publicly available at https://layout-parser.github.io."
+        },
+        {
+            "chunk_id": 33,
+            "text": "Keywords: Document Image Analysis \u00b7 Deep Learning \u00b7 Layout Analysis \u00b7 Character Recognition \u00b7 Open Source library \u00b7 Toolkit.\n\n1"
+        },
+        {
+            "chunk_id": 34,
+            "text": "Introduction\n\nDeep Learning(DL)-based approaches are the state-of-the-art for a wide range of document image analysis (DIA) tasks including document image classi\ufb01cation [11,\n\n2\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 35,
+            "text": "37], layout detection [38, 22], table detection [26], and scene text detection [4]. A generalized learning-based framework dramatically reduces the need for the manual speci\ufb01cation of complicated rules, which is the status quo with traditional"
+        },
+        {
+            "chunk_id": 36,
+            "text": "ion [26], and scene text detection [4]. A generalized learning-based framework dramatically reduces the need for the manual speci\ufb01cation of complicated rules, which is the status quo with traditional methods. DL has the potential to transform DIA"
+        },
+        {
+            "chunk_id": 37,
+            "text": "alized learning-based framework dramatically reduces the need for the manual speci\ufb01cation of complicated rules, which is the status quo with traditional methods. DL has the potential to transform DIA pipelines and bene\ufb01t a broad spectrum of"
+        },
+        {
+            "chunk_id": 38,
+            "text": "lly reduces the need for the manual speci\ufb01cation of complicated rules, which is the status quo with traditional methods. DL has the potential to transform DIA pipelines and bene\ufb01t a broad spectrum of large-scale document digitization projects."
+        },
+        {
+            "chunk_id": 39,
+            "text": "However, there are several practical di\ufb03culties for taking advantages of re- cent advances in DL-based methods: 1) DL models are notoriously convoluted for reuse and extension. Existing models are developed using distinct frame- works like TensorFlow"
+        },
+        {
+            "chunk_id": 40,
+            "text": "taking advantages of re- cent advances in DL-based methods: 1) DL models are notoriously convoluted for reuse and extension. Existing models are developed using distinct frame- works like TensorFlow [1] or PyTorch [24], and the high-level parameters"
+        },
+        {
+            "chunk_id": 41,
+            "text": "methods: 1) DL models are notoriously convoluted for reuse and extension. Existing models are developed using distinct frame- works like TensorFlow [1] or PyTorch [24], and the high-level parameters can be obfuscated by implementation details [8]. It"
+        },
+        {
+            "chunk_id": 42,
+            "text": "r reuse and extension. Existing models are developed using distinct frame- works like TensorFlow [1] or PyTorch [24], and the high-level parameters can be obfuscated by implementation details [8]. It can be a time-consuming and frustrating experience"
+        },
+        {
+            "chunk_id": 43,
+            "text": "d using distinct frame- works like TensorFlow [1] or PyTorch [24], and the high-level parameters can be obfuscated by implementation details [8]. It can be a time-consuming and frustrating experience to debug, reproduce, and adapt existing models for"
+        },
+        {
+            "chunk_id": 44,
+            "text": "r PyTorch [24], and the high-level parameters can be obfuscated by implementation details [8]. It can be a time-consuming and frustrating experience to debug, reproduce, and adapt existing models for DIA, and many researchers who would bene\ufb01t the"
+        },
+        {
+            "chunk_id": 45,
+            "text": "an be obfuscated by implementation details [8]. It can be a time-consuming and frustrating experience to debug, reproduce, and adapt existing models for DIA, and many researchers who would bene\ufb01t the most from using these methods lack the technical"
+        },
+        {
+            "chunk_id": 46,
+            "text": "t can be a time-consuming and frustrating experience to debug, reproduce, and adapt existing models for DIA, and many researchers who would bene\ufb01t the most from using these methods lack the technical background to implement them from scratch. 2)"
+        },
+        {
+            "chunk_id": 47,
+            "text": "rience to debug, reproduce, and adapt existing models for DIA, and many researchers who would bene\ufb01t the most from using these methods lack the technical background to implement them from scratch. 2) Document images contain diverse and disparate"
+        },
+        {
+            "chunk_id": 48,
+            "text": "models for DIA, and many researchers who would bene\ufb01t the most from using these methods lack the technical background to implement them from scratch. 2) Document images contain diverse and disparate patterns across domains, and customized training is"
+        },
+        {
+            "chunk_id": 49,
+            "text": "\ufb01t the most from using these methods lack the technical background to implement them from scratch. 2) Document images contain diverse and disparate patterns across domains, and customized training is often required to achieve a desirable detection"
+        },
+        {
+            "chunk_id": 50,
+            "text": "chnical background to implement them from scratch. 2) Document images contain diverse and disparate patterns across domains, and customized training is often required to achieve a desirable detection accuracy. Currently there is no full-\ufb02edged"
+        },
+        {
+            "chunk_id": 51,
+            "text": "ratch. 2) Document images contain diverse and disparate patterns across domains, and customized training is often required to achieve a desirable detection accuracy. Currently there is no full-\ufb02edged infrastructure for easily curating the target"
+        },
+        {
+            "chunk_id": 52,
+            "text": "disparate patterns across domains, and customized training is often required to achieve a desirable detection accuracy. Currently there is no full-\ufb02edged infrastructure for easily curating the target document image datasets and \ufb01ne-tuning or"
+        },
+        {
+            "chunk_id": 53,
+            "text": "tomized training is often required to achieve a desirable detection accuracy. Currently there is no full-\ufb02edged infrastructure for easily curating the target document image datasets and \ufb01ne-tuning or re-training the models. 3) DIA usually requires a"
+        },
+        {
+            "chunk_id": 54,
+            "text": "sirable detection accuracy. Currently there is no full-\ufb02edged infrastructure for easily curating the target document image datasets and \ufb01ne-tuning or re-training the models. 3) DIA usually requires a sequence of models and other processing to obtain"
+        },
+        {
+            "chunk_id": 55,
+            "text": "full-\ufb02edged infrastructure for easily curating the target document image datasets and \ufb01ne-tuning or re-training the models. 3) DIA usually requires a sequence of models and other processing to obtain the \ufb01nal outputs. Often research teams use DL"
+        },
+        {
+            "chunk_id": 56,
+            "text": "the target document image datasets and \ufb01ne-tuning or re-training the models. 3) DIA usually requires a sequence of models and other processing to obtain the \ufb01nal outputs. Often research teams use DL models and then perform further document analyses"
+        },
+        {
+            "chunk_id": 57,
+            "text": "or re-training the models. 3) DIA usually requires a sequence of models and other processing to obtain the \ufb01nal outputs. Often research teams use DL models and then perform further document analyses in separate processes, and these pipelines are not"
+        },
+        {
+            "chunk_id": 58,
+            "text": "a sequence of models and other processing to obtain the \ufb01nal outputs. Often research teams use DL models and then perform further document analyses in separate processes, and these pipelines are not documented in any central location (and often not"
+        },
+        {
+            "chunk_id": 59,
+            "text": "in the \ufb01nal outputs. Often research teams use DL models and then perform further document analyses in separate processes, and these pipelines are not documented in any central location (and often not documented at all). This makes it di\ufb03cult for"
+        },
+        {
+            "chunk_id": 60,
+            "text": "DL models and then perform further document analyses in separate processes, and these pipelines are not documented in any central location (and often not documented at all). This makes it di\ufb03cult for research teams to learn about how full pipelines"
+        },
+        {
+            "chunk_id": 61,
+            "text": "ses in separate processes, and these pipelines are not documented in any central location (and often not documented at all). This makes it di\ufb03cult for research teams to learn about how full pipelines are implemented and leads them to invest"
+        },
+        {
+            "chunk_id": 62,
+            "text": "lines are not documented in any central location (and often not documented at all). This makes it di\ufb03cult for research teams to learn about how full pipelines are implemented and leads them to invest signi\ufb01cant resources in reinventing the DIA wheel."
+        },
+        {
+            "chunk_id": 63,
+            "text": "LayoutParser provides a uni\ufb01ed toolkit to support DL-based document image analysis and processing. To address the aforementioned challenges, LayoutParser is built with the following components:"
+        },
+        {
+            "chunk_id": 64,
+            "text": "1. An o\ufb00-the-shelf toolkit for applying DL models for layout detection, character recognition, and other DIA tasks (Section 3)\n\n2. A rich repository of pre-trained neural network models (Model Zoo) that underlies the o\ufb00-the-shelf usage"
+        },
+        {
+            "chunk_id": 65,
+            "text": "3. Comprehensive tools for e\ufb03cient document image data annotation and model tuning to support di\ufb00erent levels of customization"
+        },
+        {
+            "chunk_id": 66,
+            "text": "4. A DL model hub and community platform for the easy sharing, distribu- tion, and discussion of DIA models and pipelines, to promote reusability, reproducibility, and extensibility (Section 4)"
+        },
+        {
+            "chunk_id": 67,
+            "text": "The library implements simple and intuitive Python APIs without sacri\ufb01cing generalizability and versatility, and can be easily installed via pip. Its convenient functions for handling document image data can be seamlessly integrated with existing DIA"
+        },
+        {
+            "chunk_id": 68,
+            "text": "APIs without sacri\ufb01cing generalizability and versatility, and can be easily installed via pip. Its convenient functions for handling document image data can be seamlessly integrated with existing DIA pipelines. With detailed documentations and"
+        },
+        {
+            "chunk_id": 69,
+            "text": "versatility, and can be easily installed via pip. Its convenient functions for handling document image data can be seamlessly integrated with existing DIA pipelines. With detailed documentations and carefully curated tutorials, we hope this tool will"
+        },
+        {
+            "chunk_id": 70,
+            "text": "ts convenient functions for handling document image data can be seamlessly integrated with existing DIA pipelines. With detailed documentations and carefully curated tutorials, we hope this tool will bene\ufb01t a variety of end-users, and will lead to"
+        },
+        {
+            "chunk_id": 71,
+            "text": "age data can be seamlessly integrated with existing DIA pipelines. With detailed documentations and carefully curated tutorials, we hope this tool will bene\ufb01t a variety of end-users, and will lead to advances in applications in both industry and"
+        },
+        {
+            "chunk_id": 72,
+            "text": "sting DIA pipelines. With detailed documentations and carefully curated tutorials, we hope this tool will bene\ufb01t a variety of end-users, and will lead to advances in applications in both industry and academic research."
+        },
+        {
+            "chunk_id": 73,
+            "text": "LayoutParser is well aligned with recent e\ufb00orts for improving DL model reusability in other disciplines like natural language processing [8, 34] and com- puter vision [35], but with a focus on unique challenges in DIA. We show LayoutParser can be"
+        },
+        {
+            "chunk_id": 74,
+            "text": "for improving DL model reusability in other disciplines like natural language processing [8, 34] and com- puter vision [35], but with a focus on unique challenges in DIA. We show LayoutParser can be applied in sophisticated and large-scale"
+        },
+        {
+            "chunk_id": 75,
+            "text": "her disciplines like natural language processing [8, 34] and com- puter vision [35], but with a focus on unique challenges in DIA. We show LayoutParser can be applied in sophisticated and large-scale digitization projects"
+        },
+        {
+            "chunk_id": 76,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 77,
+            "text": "that require precision, e\ufb03ciency, and robustness, as well as simple and light- weight document processing tasks focusing on e\ufb03cacy and \ufb02exibility (Section 5). LayoutParser is being actively maintained, and support for more deep learning models and"
+        },
+        {
+            "chunk_id": 78,
+            "text": ", as well as simple and light- weight document processing tasks focusing on e\ufb03cacy and \ufb02exibility (Section 5). LayoutParser is being actively maintained, and support for more deep learning models and novel methods in text-based layout analysis"
+        },
+        {
+            "chunk_id": 79,
+            "text": "nt processing tasks focusing on e\ufb03cacy and \ufb02exibility (Section 5). LayoutParser is being actively maintained, and support for more deep learning models and novel methods in text-based layout analysis methods [37, 34] is planned."
+        },
+        {
+            "chunk_id": 80,
+            "text": "The rest of the paper is organized as follows. Section 2 provides an overview of related work. The core LayoutParser library, DL Model Zoo, and customized model training are described in Section 3, and the DL model hub and commu- nity platform are"
+        },
+        {
+            "chunk_id": 81,
+            "text": "ection 2 provides an overview of related work. The core LayoutParser library, DL Model Zoo, and customized model training are described in Section 3, and the DL model hub and commu- nity platform are detailed in Section 4. Section 5 shows two"
+        },
+        {
+            "chunk_id": 82,
+            "text": "rk. The core LayoutParser library, DL Model Zoo, and customized model training are described in Section 3, and the DL model hub and commu- nity platform are detailed in Section 4. Section 5 shows two examples of how LayoutParser can be used in"
+        },
+        {
+            "chunk_id": 83,
+            "text": "Zoo, and customized model training are described in Section 3, and the DL model hub and commu- nity platform are detailed in Section 4. Section 5 shows two examples of how LayoutParser can be used in practical DIA projects, and Section 6 concludes."
+        },
+        {
+            "chunk_id": 84,
+            "text": "2 Related Work"
+        },
+        {
+            "chunk_id": 85,
+            "text": "Recently, various DL models and datasets have been developed for layout analysis tasks. The dhSegment [22] utilizes fully convolutional networks [20] for segmen- tation tasks on historical documents. Object detection-based methods like Faster R-CNN"
+        },
+        {
+            "chunk_id": 86,
+            "text": "n developed for layout analysis tasks. The dhSegment [22] utilizes fully convolutional networks [20] for segmen- tation tasks on historical documents. Object detection-based methods like Faster R-CNN [28] and Mask R-CNN [12] are used for identifying"
+        },
+        {
+            "chunk_id": 87,
+            "text": "nt [22] utilizes fully convolutional networks [20] for segmen- tation tasks on historical documents. Object detection-based methods like Faster R-CNN [28] and Mask R-CNN [12] are used for identifying document elements [38] and detecting tables [30,"
+        },
+        {
+            "chunk_id": 88,
+            "text": "] for segmen- tation tasks on historical documents. Object detection-based methods like Faster R-CNN [28] and Mask R-CNN [12] are used for identifying document elements [38] and detecting tables [30, 26]. Most recently, Graph Neural Networks [29]"
+        },
+        {
+            "chunk_id": 89,
+            "text": "nts. Object detection-based methods like Faster R-CNN [28] and Mask R-CNN [12] are used for identifying document elements [38] and detecting tables [30, 26]. Most recently, Graph Neural Networks [29] have also been used in table detection [27]."
+        },
+        {
+            "chunk_id": 90,
+            "text": "er R-CNN [28] and Mask R-CNN [12] are used for identifying document elements [38] and detecting tables [30, 26]. Most recently, Graph Neural Networks [29] have also been used in table detection [27]. However, these models are usually implemented"
+        },
+        {
+            "chunk_id": 91,
+            "text": "identifying document elements [38] and detecting tables [30, 26]. Most recently, Graph Neural Networks [29] have also been used in table detection [27]. However, these models are usually implemented individually and there is no uni\ufb01ed framework to"
+        },
+        {
+            "chunk_id": 92,
+            "text": "tables [30, 26]. Most recently, Graph Neural Networks [29] have also been used in table detection [27]. However, these models are usually implemented individually and there is no uni\ufb01ed framework to load and use such models."
+        },
+        {
+            "chunk_id": 93,
+            "text": "There has been a surge of interest in creating open-source tools for document image processing: a search of document image analysis in Github leads to 5M relevant code pieces 6; yet most of them rely on traditional rule-based methods or provide"
+        },
+        {
+            "chunk_id": 94,
+            "text": "g open-source tools for document image processing: a search of document image analysis in Github leads to 5M relevant code pieces 6; yet most of them rely on traditional rule-based methods or provide limited functionalities. The closest prior"
+        },
+        {
+            "chunk_id": 95,
+            "text": "essing: a search of document image analysis in Github leads to 5M relevant code pieces 6; yet most of them rely on traditional rule-based methods or provide limited functionalities. The closest prior research to our work is the OCR-D project7, which"
+        },
+        {
+            "chunk_id": 96,
+            "text": "hub leads to 5M relevant code pieces 6; yet most of them rely on traditional rule-based methods or provide limited functionalities. The closest prior research to our work is the OCR-D project7, which also tries to build a complete toolkit for DIA."
+        },
+        {
+            "chunk_id": 97,
+            "text": "of them rely on traditional rule-based methods or provide limited functionalities. The closest prior research to our work is the OCR-D project7, which also tries to build a complete toolkit for DIA. However, similar to the platform developed by"
+        },
+        {
+            "chunk_id": 98,
+            "text": "s or provide limited functionalities. The closest prior research to our work is the OCR-D project7, which also tries to build a complete toolkit for DIA. However, similar to the platform developed by Neudecker et al. [21], it is designed for"
+        },
+        {
+            "chunk_id": 99,
+            "text": "closest prior research to our work is the OCR-D project7, which also tries to build a complete toolkit for DIA. However, similar to the platform developed by Neudecker et al. [21], it is designed for analyzing historical documents, and provides no"
+        },
+        {
+            "chunk_id": 100,
+            "text": "project7, which also tries to build a complete toolkit for DIA. However, similar to the platform developed by Neudecker et al. [21], it is designed for analyzing historical documents, and provides no supports for recent DL models. The"
+        },
+        {
+            "chunk_id": 101,
+            "text": "a complete toolkit for DIA. However, similar to the platform developed by Neudecker et al. [21], it is designed for analyzing historical documents, and provides no supports for recent DL models. The DocumentLayoutAnalysis project8 focuses on"
+        },
+        {
+            "chunk_id": 102,
+            "text": "ar to the platform developed by Neudecker et al. [21], it is designed for analyzing historical documents, and provides no supports for recent DL models. The DocumentLayoutAnalysis project8 focuses on processing born-digital PDF documents via"
+        },
+        {
+            "chunk_id": 103,
+            "text": "et al. [21], it is designed for analyzing historical documents, and provides no supports for recent DL models. The DocumentLayoutAnalysis project8 focuses on processing born-digital PDF documents via analyzing the stored PDF data. Repositories like"
+        },
+        {
+            "chunk_id": 104,
+            "text": "cal documents, and provides no supports for recent DL models. The DocumentLayoutAnalysis project8 focuses on processing born-digital PDF documents via analyzing the stored PDF data. Repositories like DeepLayout9 and Detectron2-PubLayNet10 are"
+        },
+        {
+            "chunk_id": 105,
+            "text": "recent DL models. The DocumentLayoutAnalysis project8 focuses on processing born-digital PDF documents via analyzing the stored PDF data. Repositories like DeepLayout9 and Detectron2-PubLayNet10 are individual deep learning models trained on layout"
+        },
+        {
+            "chunk_id": 106,
+            "text": "ect8 focuses on processing born-digital PDF documents via analyzing the stored PDF data. Repositories like DeepLayout9 and Detectron2-PubLayNet10 are individual deep learning models trained on layout analysis datasets without support for the full DIA"
+        },
+        {
+            "chunk_id": 107,
+            "text": "ts via analyzing the stored PDF data. Repositories like DeepLayout9 and Detectron2-PubLayNet10 are individual deep learning models trained on layout analysis datasets without support for the full DIA pipeline. The Document Analysis and Exploitation"
+        },
+        {
+            "chunk_id": 108,
+            "text": "s like DeepLayout9 and Detectron2-PubLayNet10 are individual deep learning models trained on layout analysis datasets without support for the full DIA pipeline. The Document Analysis and Exploitation (DAE) platform [15] and the DeepDIVA project [2]"
+        },
+        {
+            "chunk_id": 109,
+            "text": "individual deep learning models trained on layout analysis datasets without support for the full DIA pipeline. The Document Analysis and Exploitation (DAE) platform [15] and the DeepDIVA project [2] aim to improve the reproducibility of DIA methods"
+        },
+        {
+            "chunk_id": 110,
+            "text": "analysis datasets without support for the full DIA pipeline. The Document Analysis and Exploitation (DAE) platform [15] and the DeepDIVA project [2] aim to improve the reproducibility of DIA methods (or DL models), yet they are not actively"
+        },
+        {
+            "chunk_id": 111,
+            "text": "full DIA pipeline. The Document Analysis and Exploitation (DAE) platform [15] and the DeepDIVA project [2] aim to improve the reproducibility of DIA methods (or DL models), yet they are not actively maintained. OCR engines like Tesseract [14],"
+        },
+        {
+            "chunk_id": 112,
+            "text": "Exploitation (DAE) platform [15] and the DeepDIVA project [2] aim to improve the reproducibility of DIA methods (or DL models), yet they are not actively maintained. OCR engines like Tesseract [14], easyOCR11 and paddleOCR12 usually do not come with"
+        },
+        {
+            "chunk_id": 113,
+            "text": "project [2] aim to improve the reproducibility of DIA methods (or DL models), yet they are not actively maintained. OCR engines like Tesseract [14], easyOCR11 and paddleOCR12 usually do not come with comprehensive functionalities for other DIA tasks"
+        },
+        {
+            "chunk_id": 114,
+            "text": "DIA methods (or DL models), yet they are not actively maintained. OCR engines like Tesseract [14], easyOCR11 and paddleOCR12 usually do not come with comprehensive functionalities for other DIA tasks like layout analysis."
+        },
+        {
+            "chunk_id": 115,
+            "text": "Recent years have also seen numerous e\ufb00orts to create libraries for promoting reproducibility and reusability in the \ufb01eld of DL. Libraries like Dectectron2 [35],"
+        },
+        {
+            "chunk_id": 116,
+            "text": "6 The number shown is obtained by specifying the search type as \u2018code\u2019. 7 https://ocr-d.de/en/about 8 https://github.com/BobLd/DocumentLayoutAnalysis 9 https://github.com/leonlulu/DeepLayout 10 https://github.com/hpanwar08/detectron2 11"
+        },
+        {
+            "chunk_id": 117,
+            "text": "cifying the search type as \u2018code\u2019. 7 https://ocr-d.de/en/about 8 https://github.com/BobLd/DocumentLayoutAnalysis 9 https://github.com/leonlulu/DeepLayout 10 https://github.com/hpanwar08/detectron2 11 https://github.com/JaidedAI/EasyOCR 12"
+        },
+        {
+            "chunk_id": 118,
+            "text": "tps://ocr-d.de/en/about 8 https://github.com/BobLd/DocumentLayoutAnalysis 9 https://github.com/leonlulu/DeepLayout 10 https://github.com/hpanwar08/detectron2 11 https://github.com/JaidedAI/EasyOCR 12 https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+            "chunk_id": 119,
+            "text": "3\n\n4\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 120,
+            "text": "Model Customization"
+        },
+        {
+            "chunk_id": 121,
+            "text": "Customized Model Training"
+        },
+        {
+            "chunk_id": 122,
+            "text": "Community Platform"
+        },
+        {
+            "chunk_id": 123,
+            "text": "Storage & Visualization"
+        },
+        {
+            "chunk_id": 124,
+            "text": "Layout Detection Models"
+        },
+        {
+            "chunk_id": 125,
+            "text": "The Core LayoutParser Library"
+        },
+        {
+            "chunk_id": 126,
+            "text": "DIA Pipeline Sharing"
+        },
+        {
+            "chunk_id": 127,
+            "text": "OCR Module"
+        },
+        {
+            "chunk_id": 128,
+            "text": "DIA Model Hub"
+        },
+        {
+            "chunk_id": 129,
+            "text": "Layout Data Structure"
+        },
+        {
+            "chunk_id": 130,
+            "text": "Document Images"
+        },
+        {
+            "chunk_id": 131,
+            "text": "Efficient Data Annotation"
+        },
+        {
+            "chunk_id": 132,
+            "text": "Fig.1: The overall architecture of LayoutParser. For an input document image, the core LayoutParser library provides a set of o\ufb00-the-shelf tools for layout detection, OCR, visualization, and storage, backed by a carefully designed layout data"
+        },
+        {
+            "chunk_id": 133,
+            "text": "rser. For an input document image, the core LayoutParser library provides a set of o\ufb00-the-shelf tools for layout detection, OCR, visualization, and storage, backed by a carefully designed layout data structure. LayoutParser also supports high level"
+        },
+        {
+            "chunk_id": 134,
+            "text": "tParser library provides a set of o\ufb00-the-shelf tools for layout detection, OCR, visualization, and storage, backed by a carefully designed layout data structure. LayoutParser also supports high level customization via e\ufb03cient layout annotation and"
+        },
+        {
+            "chunk_id": 135,
+            "text": "ools for layout detection, OCR, visualization, and storage, backed by a carefully designed layout data structure. LayoutParser also supports high level customization via e\ufb03cient layout annotation and model training functions. These improve model"
+        },
+        {
+            "chunk_id": 136,
+            "text": "and storage, backed by a carefully designed layout data structure. LayoutParser also supports high level customization via e\ufb03cient layout annotation and model training functions. These improve model accuracy on the target samples. The community"
+        },
+        {
+            "chunk_id": 137,
+            "text": "ayout data structure. LayoutParser also supports high level customization via e\ufb03cient layout annotation and model training functions. These improve model accuracy on the target samples. The community platform enables the easy sharing of DIA models"
+        },
+        {
+            "chunk_id": 138,
+            "text": "high level customization via e\ufb03cient layout annotation and model training functions. These improve model accuracy on the target samples. The community platform enables the easy sharing of DIA models and whole digitization pipelines to promote"
+        },
+        {
+            "chunk_id": 139,
+            "text": "annotation and model training functions. These improve model accuracy on the target samples. The community platform enables the easy sharing of DIA models and whole digitization pipelines to promote reusability and reproducibility. A collection of"
+        },
+        {
+            "chunk_id": 140,
+            "text": "mprove model accuracy on the target samples. The community platform enables the easy sharing of DIA models and whole digitization pipelines to promote reusability and reproducibility. A collection of detailed documentation, tutorials and exemplar"
+        },
+        {
+            "chunk_id": 141,
+            "text": "e community platform enables the easy sharing of DIA models and whole digitization pipelines to promote reusability and reproducibility. A collection of detailed documentation, tutorials and exemplar projects make LayoutParser easy to learn and use."
+        },
+        {
+            "chunk_id": 142,
+            "text": "AllenNLP [8] and transformers [34] have provided the community with complete DL-based support for developing and deploying models for general computer vision and natural language processing problems. LayoutParser, on the other hand, specializes"
+        },
+        {
+            "chunk_id": 143,
+            "text": "ded the community with complete DL-based support for developing and deploying models for general computer vision and natural language processing problems. LayoutParser, on the other hand, specializes speci\ufb01cally in DIA tasks. LayoutParser is also"
+        },
+        {
+            "chunk_id": 144,
+            "text": "t for developing and deploying models for general computer vision and natural language processing problems. LayoutParser, on the other hand, specializes speci\ufb01cally in DIA tasks. LayoutParser is also equipped with a community platform inspired by"
+        },
+        {
+            "chunk_id": 145,
+            "text": "al computer vision and natural language processing problems. LayoutParser, on the other hand, specializes speci\ufb01cally in DIA tasks. LayoutParser is also equipped with a community platform inspired by established model hubs such as Torch Hub [23] and"
+        },
+        {
+            "chunk_id": 146,
+            "text": "problems. LayoutParser, on the other hand, specializes speci\ufb01cally in DIA tasks. LayoutParser is also equipped with a community platform inspired by established model hubs such as Torch Hub [23] and TensorFlow Hub [1]. It enables the sharing of"
+        },
+        {
+            "chunk_id": 147,
+            "text": "ecializes speci\ufb01cally in DIA tasks. LayoutParser is also equipped with a community platform inspired by established model hubs such as Torch Hub [23] and TensorFlow Hub [1]. It enables the sharing of pretrained models as well as full document"
+        },
+        {
+            "chunk_id": 148,
+            "text": "arser is also equipped with a community platform inspired by established model hubs such as Torch Hub [23] and TensorFlow Hub [1]. It enables the sharing of pretrained models as well as full document processing pipelines that are unique to DIA tasks."
+        },
+        {
+            "chunk_id": 149,
+            "text": "There have been a variety of document data collections to facilitate the development of DL models. Some examples include PRImA [3](magazine layouts), PubLayNet [38](academic paper layouts), Table Bank [18](tables in academic papers), Newspaper"
+        },
+        {
+            "chunk_id": 150,
+            "text": "ollections to facilitate the development of DL models. Some examples include PRImA [3](magazine layouts), PubLayNet [38](academic paper layouts), Table Bank [18](tables in academic papers), Newspaper Navigator Dataset [16, 17](newspaper \ufb01gure"
+        },
+        {
+            "chunk_id": 151,
+            "text": "DL models. Some examples include PRImA [3](magazine layouts), PubLayNet [38](academic paper layouts), Table Bank [18](tables in academic papers), Newspaper Navigator Dataset [16, 17](newspaper \ufb01gure layouts) and HJDataset [31](historical Japanese"
+        },
+        {
+            "chunk_id": 152,
+            "text": "zine layouts), PubLayNet [38](academic paper layouts), Table Bank [18](tables in academic papers), Newspaper Navigator Dataset [16, 17](newspaper \ufb01gure layouts) and HJDataset [31](historical Japanese document layouts). A spectrum of models trained on"
+        },
+        {
+            "chunk_id": 153,
+            "text": "s), Table Bank [18](tables in academic papers), Newspaper Navigator Dataset [16, 17](newspaper \ufb01gure layouts) and HJDataset [31](historical Japanese document layouts). A spectrum of models trained on these datasets are currently available in the"
+        },
+        {
+            "chunk_id": 154,
+            "text": ", Newspaper Navigator Dataset [16, 17](newspaper \ufb01gure layouts) and HJDataset [31](historical Japanese document layouts). A spectrum of models trained on these datasets are currently available in the LayoutParser model zoo to support di\ufb00erent use"
+        },
+        {
+            "chunk_id": 155,
+            "text": "r \ufb01gure layouts) and HJDataset [31](historical Japanese document layouts). A spectrum of models trained on these datasets are currently available in the LayoutParser model zoo to support di\ufb00erent use cases."
+        },
+        {
+            "chunk_id": 156,
+            "text": "3 The Core LayoutParser Library"
+        },
+        {
+            "chunk_id": 157,
+            "text": "At the core of LayoutParser is an o\ufb00-the-shelf toolkit that streamlines DL- based document image analysis. Five components support a simple interface with comprehensive functionalities: 1) The layout detection models enable using pre-trained or"
+        },
+        {
+            "chunk_id": 158,
+            "text": "f toolkit that streamlines DL- based document image analysis. Five components support a simple interface with comprehensive functionalities: 1) The layout detection models enable using pre-trained or self-trained DL models for layout detection with"
+        },
+        {
+            "chunk_id": 159,
+            "text": "ge analysis. Five components support a simple interface with comprehensive functionalities: 1) The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code. 2) The detected layout"
+        },
+        {
+            "chunk_id": 160,
+            "text": "terface with comprehensive functionalities: 1) The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code. 2) The detected layout information is stored in carefully engineered"
+        },
+        {
+            "chunk_id": 161,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 162,
+            "text": "Table 1: Current layout detection models in the LayoutParser model zoo"
+        },
+        {
+            "chunk_id": 163,
+            "text": "Dataset"
+        },
+        {
+            "chunk_id": 164,
+            "text": "Base Model1 Large Model Notes\n\nPubLayNet [38] PRImA [3] Newspaper [17] TableBank [18] HJDataset [31]"
+        },
+        {
+            "chunk_id": 165,
+            "text": "F / M M F F F / M\n\nM - - F -"
+        },
+        {
+            "chunk_id": 166,
+            "text": "Layouts of modern scienti\ufb01c documents Layouts of scanned modern magazines and scienti\ufb01c reports Layouts of scanned US newspapers from the 20th century Table region on modern scienti\ufb01c and business document Layouts of history Japanese documents"
+        },
+        {
+            "chunk_id": 167,
+            "text": "1 For each dataset, we train several models of di\ufb00erent sizes for di\ufb00erent needs (the trade-o\ufb00 between accuracy vs. computational cost). For \u201cbase model\u201d and \u201clarge model\u201d, we refer to using the ResNet 50 or ResNet 101 backbones [13], respectively."
+        },
+        {
+            "chunk_id": 168,
+            "text": "\ufb00erent sizes for di\ufb00erent needs (the trade-o\ufb00 between accuracy vs. computational cost). For \u201cbase model\u201d and \u201clarge model\u201d, we refer to using the ResNet 50 or ResNet 101 backbones [13], respectively. One can train models of di\ufb00erent architectures,"
+        },
+        {
+            "chunk_id": 169,
+            "text": "tween accuracy vs. computational cost). For \u201cbase model\u201d and \u201clarge model\u201d, we refer to using the ResNet 50 or ResNet 101 backbones [13], respectively. One can train models of di\ufb00erent architectures, like Faster R-CNN [28] (F) and Mask R-CNN [12]"
+        },
+        {
+            "chunk_id": 170,
+            "text": "se model\u201d and \u201clarge model\u201d, we refer to using the ResNet 50 or ResNet 101 backbones [13], respectively. One can train models of di\ufb00erent architectures, like Faster R-CNN [28] (F) and Mask R-CNN [12] (M). For example, an F in the Large Model column"
+        },
+        {
+            "chunk_id": 171,
+            "text": "e ResNet 50 or ResNet 101 backbones [13], respectively. One can train models of di\ufb00erent architectures, like Faster R-CNN [28] (F) and Mask R-CNN [12] (M). For example, an F in the Large Model column indicates it has a Faster R-CNN model trained"
+        },
+        {
+            "chunk_id": 172,
+            "text": "ectively. One can train models of di\ufb00erent architectures, like Faster R-CNN [28] (F) and Mask R-CNN [12] (M). For example, an F in the Large Model column indicates it has a Faster R-CNN model trained using the ResNet 101 backbone. The platform is"
+        },
+        {
+            "chunk_id": 173,
+            "text": "itectures, like Faster R-CNN [28] (F) and Mask R-CNN [12] (M). For example, an F in the Large Model column indicates it has a Faster R-CNN model trained using the ResNet 101 backbone. The platform is maintained and a number of additions will be made"
+        },
+        {
+            "chunk_id": 174,
+            "text": "NN [12] (M). For example, an F in the Large Model column indicates it has a Faster R-CNN model trained using the ResNet 101 backbone. The platform is maintained and a number of additions will be made to the model zoo in coming months."
+        },
+        {
+            "chunk_id": 175,
+            "text": "layout data structures, which are optimized for e\ufb03ciency and versatility. 3) When necessary, users can employ existing or customized OCR models via the uni\ufb01ed API provided in the OCR module. 4) LayoutParser comes with a set of utility functions for"
+        },
+        {
+            "chunk_id": 176,
+            "text": "\ufb03ciency and versatility. 3) When necessary, users can employ existing or customized OCR models via the uni\ufb01ed API provided in the OCR module. 4) LayoutParser comes with a set of utility functions for the visualization and storage of the layout data."
+        },
+        {
+            "chunk_id": 177,
+            "text": "can employ existing or customized OCR models via the uni\ufb01ed API provided in the OCR module. 4) LayoutParser comes with a set of utility functions for the visualization and storage of the layout data. 5) LayoutParser is also highly customizable, via"
+        },
+        {
+            "chunk_id": 178,
+            "text": "the uni\ufb01ed API provided in the OCR module. 4) LayoutParser comes with a set of utility functions for the visualization and storage of the layout data. 5) LayoutParser is also highly customizable, via its integration with functions for layout data"
+        },
+        {
+            "chunk_id": 179,
+            "text": "ayoutParser comes with a set of utility functions for the visualization and storage of the layout data. 5) LayoutParser is also highly customizable, via its integration with functions for layout data annotation and model training. We now provide"
+        },
+        {
+            "chunk_id": 180,
+            "text": "ons for the visualization and storage of the layout data. 5) LayoutParser is also highly customizable, via its integration with functions for layout data annotation and model training. We now provide detailed descriptions for each component."
+        },
+        {
+            "chunk_id": 181,
+            "text": "3.1 Layout Detection Models"
+        },
+        {
+            "chunk_id": 182,
+            "text": "In LayoutParser, a layout model takes a document image as an input and generates a list of rectangular boxes for the target content regions. Di\ufb00erent from traditional methods, it relies on deep convolutional neural networks rather than manually"
+        },
+        {
+            "chunk_id": 183,
+            "text": "ent image as an input and generates a list of rectangular boxes for the target content regions. Di\ufb00erent from traditional methods, it relies on deep convolutional neural networks rather than manually curated rules to identify content regions. It is"
+        },
+        {
+            "chunk_id": 184,
+            "text": "tangular boxes for the target content regions. Di\ufb00erent from traditional methods, it relies on deep convolutional neural networks rather than manually curated rules to identify content regions. It is formulated as an object detection problem and"
+        },
+        {
+            "chunk_id": 185,
+            "text": "Di\ufb00erent from traditional methods, it relies on deep convolutional neural networks rather than manually curated rules to identify content regions. It is formulated as an object detection problem and state-of-the-art models like Faster R-CNN [28] and"
+        },
+        {
+            "chunk_id": 186,
+            "text": "ep convolutional neural networks rather than manually curated rules to identify content regions. It is formulated as an object detection problem and state-of-the-art models like Faster R-CNN [28] and Mask R-CNN [12] are used. This yields prediction"
+        },
+        {
+            "chunk_id": 187,
+            "text": "ally curated rules to identify content regions. It is formulated as an object detection problem and state-of-the-art models like Faster R-CNN [28] and Mask R-CNN [12] are used. This yields prediction results of high accuracy and makes it possible to"
+        },
+        {
+            "chunk_id": 188,
+            "text": "is formulated as an object detection problem and state-of-the-art models like Faster R-CNN [28] and Mask R-CNN [12] are used. This yields prediction results of high accuracy and makes it possible to build a concise, generalized interface for layout"
+        },
+        {
+            "chunk_id": 189,
+            "text": "state-of-the-art models like Faster R-CNN [28] and Mask R-CNN [12] are used. This yields prediction results of high accuracy and makes it possible to build a concise, generalized interface for layout detection. LayoutParser, built upon Detectron2"
+        },
+        {
+            "chunk_id": 190,
+            "text": "and Mask R-CNN [12] are used. This yields prediction results of high accuracy and makes it possible to build a concise, generalized interface for layout detection. LayoutParser, built upon Detectron2 [35], provides a minimal API that can perform"
+        },
+        {
+            "chunk_id": 191,
+            "text": "iction results of high accuracy and makes it possible to build a concise, generalized interface for layout detection. LayoutParser, built upon Detectron2 [35], provides a minimal API that can perform layout detection with only four lines of code in"
+        },
+        {
+            "chunk_id": 192,
+            "text": "ible to build a concise, generalized interface for layout detection. LayoutParser, built upon Detectron2 [35], provides a minimal API that can perform layout detection with only four lines of code in Python:"
+        },
+        {
+            "chunk_id": 193,
+            "text": "1 import layoutparser as lp 2 image = cv2.imread(\"image_file\") # load images 3 model = lp.Detectron2LayoutModel("
+        },
+        {
+            "chunk_id": 194,
+            "text": "\"lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config\")"
+        },
+        {
+            "chunk_id": 195,
+            "text": "4 5 layout = model.detect(image)"
+        },
+        {
+            "chunk_id": 196,
+            "text": "LayoutParser provides a wealth of pre-trained model weights using various datasets covering di\ufb00erent languages, time periods, and document types. Due to domain shift [7], the prediction performance can notably drop when models are ap- plied to target"
+        },
+        {
+            "chunk_id": 197,
+            "text": "weights using various datasets covering di\ufb00erent languages, time periods, and document types. Due to domain shift [7], the prediction performance can notably drop when models are ap- plied to target samples that are signi\ufb01cantly di\ufb00erent from the"
+        },
+        {
+            "chunk_id": 198,
+            "text": "t languages, time periods, and document types. Due to domain shift [7], the prediction performance can notably drop when models are ap- plied to target samples that are signi\ufb01cantly di\ufb00erent from the training dataset. As document structures and"
+        },
+        {
+            "chunk_id": 199,
+            "text": ". Due to domain shift [7], the prediction performance can notably drop when models are ap- plied to target samples that are signi\ufb01cantly di\ufb00erent from the training dataset. As document structures and layouts vary greatly in di\ufb00erent domains, it is"
+        },
+        {
+            "chunk_id": 200,
+            "text": "mance can notably drop when models are ap- plied to target samples that are signi\ufb01cantly di\ufb00erent from the training dataset. As document structures and layouts vary greatly in di\ufb00erent domains, it is important to select models trained on a dataset"
+        },
+        {
+            "chunk_id": 201,
+            "text": "to target samples that are signi\ufb01cantly di\ufb00erent from the training dataset. As document structures and layouts vary greatly in di\ufb00erent domains, it is important to select models trained on a dataset similar to the test samples. A semantic syntax is"
+        },
+        {
+            "chunk_id": 202,
+            "text": "from the training dataset. As document structures and layouts vary greatly in di\ufb00erent domains, it is important to select models trained on a dataset similar to the test samples. A semantic syntax is used for initializing the model weights in"
+        },
+        {
+            "chunk_id": 203,
+            "text": "ctures and layouts vary greatly in di\ufb00erent domains, it is important to select models trained on a dataset similar to the test samples. A semantic syntax is used for initializing the model weights in LayoutParser, using both the dataset name and"
+        },
+        {
+            "chunk_id": 204,
+            "text": "mains, it is important to select models trained on a dataset similar to the test samples. A semantic syntax is used for initializing the model weights in LayoutParser, using both the dataset name and model name"
+        },
+        {
+            "chunk_id": 205,
+            "text": "s important to select models trained on a dataset similar to the test samples. A semantic syntax is used for initializing the model weights in LayoutParser, using both the dataset name and model name lp://<dataset-name>/<model-architecture-name>."
+        },
+        {
+            "chunk_id": 206,
+            "text": "5\n\n6\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 207,
+            "text": "Fig.2: The relationship between the three types of layout data structures. Coordinate supports three kinds of variation; TextBlock consists of the co- ordinate information and extra features like block text, types, and reading orders; a Layout object"
+        },
+        {
+            "chunk_id": 208,
+            "text": "layout data structures. Coordinate supports three kinds of variation; TextBlock consists of the co- ordinate information and extra features like block text, types, and reading orders; a Layout object is a list of all possible layout elements,"
+        },
+        {
+            "chunk_id": 209,
+            "text": "three kinds of variation; TextBlock consists of the co- ordinate information and extra features like block text, types, and reading orders; a Layout object is a list of all possible layout elements, including other Layout objects. They all support"
+        },
+        {
+            "chunk_id": 210,
+            "text": "the co- ordinate information and extra features like block text, types, and reading orders; a Layout object is a list of all possible layout elements, including other Layout objects. They all support the same set of transformation and operation APIs"
+        },
+        {
+            "chunk_id": 211,
+            "text": "ke block text, types, and reading orders; a Layout object is a list of all possible layout elements, including other Layout objects. They all support the same set of transformation and operation APIs for maximum \ufb02exibility."
+        },
+        {
+            "chunk_id": 212,
+            "text": "Shown in Table 1, LayoutParser currently hosts 9 pre-trained models trained on 5 di\ufb00erent datasets. Description of the training dataset is provided alongside with the trained models such that users can quickly identify the most suitable models for"
+        },
+        {
+            "chunk_id": 213,
+            "text": "pre-trained models trained on 5 di\ufb00erent datasets. Description of the training dataset is provided alongside with the trained models such that users can quickly identify the most suitable models for their tasks. Additionally, when such a model is not"
+        },
+        {
+            "chunk_id": 214,
+            "text": "Description of the training dataset is provided alongside with the trained models such that users can quickly identify the most suitable models for their tasks. Additionally, when such a model is not readily available, LayoutParser also supports"
+        },
+        {
+            "chunk_id": 215,
+            "text": "d alongside with the trained models such that users can quickly identify the most suitable models for their tasks. Additionally, when such a model is not readily available, LayoutParser also supports training customized layout models and community"
+        },
+        {
+            "chunk_id": 216,
+            "text": "ers can quickly identify the most suitable models for their tasks. Additionally, when such a model is not readily available, LayoutParser also supports training customized layout models and community sharing of the models (detailed in Section 3.5)."
+        },
+        {
+            "chunk_id": 217,
+            "text": "3.2 Layout Data Structures"
+        },
+        {
+            "chunk_id": 218,
+            "text": "A critical feature of LayoutParser is the implementation of a series of data structures and operations that can be used to e\ufb03ciently process and manipulate the layout elements. In document image analysis pipelines, various post-processing on the"
+        },
+        {
+            "chunk_id": 219,
+            "text": "ementation of a series of data structures and operations that can be used to e\ufb03ciently process and manipulate the layout elements. In document image analysis pipelines, various post-processing on the layout analysis model outputs is usually required"
+        },
+        {
+            "chunk_id": 220,
+            "text": "ations that can be used to e\ufb03ciently process and manipulate the layout elements. In document image analysis pipelines, various post-processing on the layout analysis model outputs is usually required to obtain the \ufb01nal outputs. Traditionally, this"
+        },
+        {
+            "chunk_id": 221,
+            "text": "manipulate the layout elements. In document image analysis pipelines, various post-processing on the layout analysis model outputs is usually required to obtain the \ufb01nal outputs. Traditionally, this requires exporting DL model outputs and then"
+        },
+        {
+            "chunk_id": 222,
+            "text": "image analysis pipelines, various post-processing on the layout analysis model outputs is usually required to obtain the \ufb01nal outputs. Traditionally, this requires exporting DL model outputs and then loading the results into other pipelines. All"
+        },
+        {
+            "chunk_id": 223,
+            "text": "ing on the layout analysis model outputs is usually required to obtain the \ufb01nal outputs. Traditionally, this requires exporting DL model outputs and then loading the results into other pipelines. All model outputs from LayoutParser will be stored in"
+        },
+        {
+            "chunk_id": 224,
+            "text": "y required to obtain the \ufb01nal outputs. Traditionally, this requires exporting DL model outputs and then loading the results into other pipelines. All model outputs from LayoutParser will be stored in carefully engineered data types optimized for"
+        },
+        {
+            "chunk_id": 225,
+            "text": "onally, this requires exporting DL model outputs and then loading the results into other pipelines. All model outputs from LayoutParser will be stored in carefully engineered data types optimized for further processing, which makes it possible to"
+        },
+        {
+            "chunk_id": 226,
+            "text": "s and then loading the results into other pipelines. All model outputs from LayoutParser will be stored in carefully engineered data types optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline"
+        },
+        {
+            "chunk_id": 227,
+            "text": ". All model outputs from LayoutParser will be stored in carefully engineered data types optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline within LayoutParser. There are three key"
+        },
+        {
+            "chunk_id": 228,
+            "text": "l be stored in carefully engineered data types optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline within LayoutParser. There are three key components in the data structure, namely the"
+        },
+        {
+            "chunk_id": 229,
+            "text": "s optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline within LayoutParser. There are three key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout."
+        },
+        {
+            "chunk_id": 230,
+            "text": "possible to build an end-to-end document digitization pipeline within LayoutParser. There are three key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout. They provide di\ufb00erent levels of abstraction for the"
+        },
+        {
+            "chunk_id": 231,
+            "text": "on pipeline within LayoutParser. There are three key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout. They provide di\ufb00erent levels of abstraction for the layout data, and a set of APIs are supported for"
+        },
+        {
+            "chunk_id": 232,
+            "text": "key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout. They provide di\ufb00erent levels of abstraction for the layout data, and a set of APIs are supported for transformations or operations on these classes."
+        },
+        {
+            "chunk_id": 233,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 234,
+            "text": "Coordinates are the cornerstones for storing layout information. Currently, three types of Coordinate data structures are provided in LayoutParser, shown in Figure 2. Interval and Rectangle are the most common data types and support specifying 1D or"
+        },
+        {
+            "chunk_id": 235,
+            "text": "t information. Currently, three types of Coordinate data structures are provided in LayoutParser, shown in Figure 2. Interval and Rectangle are the most common data types and support specifying 1D or 2D regions within a document. They are"
+        },
+        {
+            "chunk_id": 236,
+            "text": "f Coordinate data structures are provided in LayoutParser, shown in Figure 2. Interval and Rectangle are the most common data types and support specifying 1D or 2D regions within a document. They are parameterized with 2 and 4 parameters. A"
+        },
+        {
+            "chunk_id": 237,
+            "text": "in LayoutParser, shown in Figure 2. Interval and Rectangle are the most common data types and support specifying 1D or 2D regions within a document. They are parameterized with 2 and 4 parameters. A Quadrilateral class is also implemented to support"
+        },
+        {
+            "chunk_id": 238,
+            "text": "ectangle are the most common data types and support specifying 1D or 2D regions within a document. They are parameterized with 2 and 4 parameters. A Quadrilateral class is also implemented to support a more generalized representation of rectangular"
+        },
+        {
+            "chunk_id": 239,
+            "text": "rt specifying 1D or 2D regions within a document. They are parameterized with 2 and 4 parameters. A Quadrilateral class is also implemented to support a more generalized representation of rectangular regions when the document is skewed or distorted,"
+        },
+        {
+            "chunk_id": 240,
+            "text": "They are parameterized with 2 and 4 parameters. A Quadrilateral class is also implemented to support a more generalized representation of rectangular regions when the document is skewed or distorted, where the 4 corner points can be speci\ufb01ed and a"
+        },
+        {
+            "chunk_id": 241,
+            "text": "A Quadrilateral class is also implemented to support a more generalized representation of rectangular regions when the document is skewed or distorted, where the 4 corner points can be speci\ufb01ed and a total of 8 degrees of freedom are supported. A"
+        },
+        {
+            "chunk_id": 242,
+            "text": "pport a more generalized representation of rectangular regions when the document is skewed or distorted, where the 4 corner points can be speci\ufb01ed and a total of 8 degrees of freedom are supported. A wide collection of transformations like shift,"
+        },
+        {
+            "chunk_id": 243,
+            "text": "angular regions when the document is skewed or distorted, where the 4 corner points can be speci\ufb01ed and a total of 8 degrees of freedom are supported. A wide collection of transformations like shift, pad, and scale, and operations like intersect,"
+        },
+        {
+            "chunk_id": 244,
+            "text": "distorted, where the 4 corner points can be speci\ufb01ed and a total of 8 degrees of freedom are supported. A wide collection of transformations like shift, pad, and scale, and operations like intersect, union, and is_in, are supported for these classes."
+        },
+        {
+            "chunk_id": 245,
+            "text": "d and a total of 8 degrees of freedom are supported. A wide collection of transformations like shift, pad, and scale, and operations like intersect, union, and is_in, are supported for these classes. Notably, it is common to separate a segment of the"
+        },
+        {
+            "chunk_id": 246,
+            "text": ". A wide collection of transformations like shift, pad, and scale, and operations like intersect, union, and is_in, are supported for these classes. Notably, it is common to separate a segment of the image and analyze it individually. LayoutParser"
+        },
+        {
+            "chunk_id": 247,
+            "text": "t, pad, and scale, and operations like intersect, union, and is_in, are supported for these classes. Notably, it is common to separate a segment of the image and analyze it individually. LayoutParser provides full support for this scenario via image"
+        },
+        {
+            "chunk_id": 248,
+            "text": "union, and is_in, are supported for these classes. Notably, it is common to separate a segment of the image and analyze it individually. LayoutParser provides full support for this scenario via image cropping operations crop_image and coordinate"
+        },
+        {
+            "chunk_id": 249,
+            "text": "ses. Notably, it is common to separate a segment of the image and analyze it individually. LayoutParser provides full support for this scenario via image cropping operations crop_image and coordinate transformations like relative_to and condition_on"
+        },
+        {
+            "chunk_id": 250,
+            "text": "f the image and analyze it individually. LayoutParser provides full support for this scenario via image cropping operations crop_image and coordinate transformations like relative_to and condition_on that transform coordinates to and from their"
+        },
+        {
+            "chunk_id": 251,
+            "text": "utParser provides full support for this scenario via image cropping operations crop_image and coordinate transformations like relative_to and condition_on that transform coordinates to and from their relative representations. We refer readers to"
+        },
+        {
+            "chunk_id": 252,
+            "text": "io via image cropping operations crop_image and coordinate transformations like relative_to and condition_on that transform coordinates to and from their relative representations. We refer readers to Table 2 for a more detailed description of these"
+        },
+        {
+            "chunk_id": 253,
+            "text": "oordinate transformations like relative_to and condition_on that transform coordinates to and from their relative representations. We refer readers to Table 2 for a more detailed description of these operations13."
+        },
+        {
+            "chunk_id": 254,
+            "text": "Based on Coordinates, we implement the TextBlock class that stores both the positional and extra features of individual layout elements. It also supports specifying the reading orders via setting the parent \ufb01eld to the index of the parent object. A"
+        },
+        {
+            "chunk_id": 255,
+            "text": "class that stores both the positional and extra features of individual layout elements. It also supports specifying the reading orders via setting the parent \ufb01eld to the index of the parent object. A Layout class is built that takes in a list of"
+        },
+        {
+            "chunk_id": 256,
+            "text": "a features of individual layout elements. It also supports specifying the reading orders via setting the parent \ufb01eld to the index of the parent object. A Layout class is built that takes in a list of TextBlocks and supports processing the elements in"
+        },
+        {
+            "chunk_id": 257,
+            "text": "upports specifying the reading orders via setting the parent \ufb01eld to the index of the parent object. A Layout class is built that takes in a list of TextBlocks and supports processing the elements in batch. Layout can also be nested to support"
+        },
+        {
+            "chunk_id": 258,
+            "text": "tting the parent \ufb01eld to the index of the parent object. A Layout class is built that takes in a list of TextBlocks and supports processing the elements in batch. Layout can also be nested to support hierarchical layout structures. They support the"
+        },
+        {
+            "chunk_id": 259,
+            "text": "object. A Layout class is built that takes in a list of TextBlocks and supports processing the elements in batch. Layout can also be nested to support hierarchical layout structures. They support the same operations and transformations as the"
+        },
+        {
+            "chunk_id": 260,
+            "text": "in a list of TextBlocks and supports processing the elements in batch. Layout can also be nested to support hierarchical layout structures. They support the same operations and transformations as the Coordinate classes, minimizing both learning and"
+        },
+        {
+            "chunk_id": 261,
+            "text": "he elements in batch. Layout can also be nested to support hierarchical layout structures. They support the same operations and transformations as the Coordinate classes, minimizing both learning and deployment e\ufb00ort."
+        },
+        {
+            "chunk_id": 262,
+            "text": "3.3 OCR"
+        },
+        {
+            "chunk_id": 263,
+            "text": "LayoutParser provides a uni\ufb01ed interface for existing OCR tools. Though there are many OCR tools available, they are usually con\ufb01gured di\ufb00erently with distinct APIs or protocols for using them. It can be ine\ufb03cient to add new OCR tools into an"
+        },
+        {
+            "chunk_id": 264,
+            "text": "r existing OCR tools. Though there are many OCR tools available, they are usually con\ufb01gured di\ufb00erently with distinct APIs or protocols for using them. It can be ine\ufb03cient to add new OCR tools into an existing pipeline, and di\ufb03cult to make direct"
+        },
+        {
+            "chunk_id": 265,
+            "text": "R tools available, they are usually con\ufb01gured di\ufb00erently with distinct APIs or protocols for using them. It can be ine\ufb03cient to add new OCR tools into an existing pipeline, and di\ufb03cult to make direct comparisons among the available tools to \ufb01nd the"
+        },
+        {
+            "chunk_id": 266,
+            "text": "erently with distinct APIs or protocols for using them. It can be ine\ufb03cient to add new OCR tools into an existing pipeline, and di\ufb03cult to make direct comparisons among the available tools to \ufb01nd the best option for a particular project. To this end,"
+        },
+        {
+            "chunk_id": 267,
+            "text": "hem. It can be ine\ufb03cient to add new OCR tools into an existing pipeline, and di\ufb03cult to make direct comparisons among the available tools to \ufb01nd the best option for a particular project. To this end, LayoutParser builds a series of wrappers among"
+        },
+        {
+            "chunk_id": 268,
+            "text": "nto an existing pipeline, and di\ufb03cult to make direct comparisons among the available tools to \ufb01nd the best option for a particular project. To this end, LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same"
+        },
+        {
+            "chunk_id": 269,
+            "text": "t comparisons among the available tools to \ufb01nd the best option for a particular project. To this end, LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them. It supports a plug-and-play"
+        },
+        {
+            "chunk_id": 270,
+            "text": "best option for a particular project. To this end, LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them. It supports a plug-and-play style of using OCR engines, making it e\ufb00ortless to"
+        },
+        {
+            "chunk_id": 271,
+            "text": "LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them. It supports a plug-and-play style of using OCR engines, making it e\ufb00ortless to switch, evaluate, and compare di\ufb00erent OCR"
+        },
+        {
+            "chunk_id": 272,
+            "text": "ong existing OCR engines, and provides nearly the same syntax for using them. It supports a plug-and-play style of using OCR engines, making it e\ufb00ortless to switch, evaluate, and compare di\ufb00erent OCR modules:"
+        },
+        {
+            "chunk_id": 273,
+            "text": "1 ocr_agent = lp.TesseractAgent() 2 # Can be easily switched to other OCR software 3 tokens = ocr_agent.detect(image)"
+        },
+        {
+            "chunk_id": 274,
+            "text": "The OCR outputs will also be stored in the aforementioned layout data structures and can be seamlessly incorporated into the digitization pipeline. Currently LayoutParser supports the Tesseract and Google Cloud Vision OCR engines."
+        },
+        {
+            "chunk_id": 275,
+            "text": "LayoutParser also comes with a DL-based CNN-RNN OCR model [6] trained with the Connectionist Temporal Classi\ufb01cation (CTC) loss [10]. It can be used like the other OCR modules, and can be easily trained on customized datasets."
+        },
+        {
+            "chunk_id": 276,
+            "text": "13 This is also available in the LayoutParser documentation pages.\n\n7\n\n8\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 277,
+            "text": "Table 2: All operations supported by the layout elements. The same APIs are supported across di\ufb00erent layout element classes including Coordinate types, TextBlock and Layout."
+        },
+        {
+            "chunk_id": 278,
+            "text": "Operation Name"
+        },
+        {
+            "chunk_id": 279,
+            "text": "Description\n\nblock.pad(top, bottom, right, left) Enlarge the current block according to the input"
+        },
+        {
+            "chunk_id": 280,
+            "text": "block.scale(fx, fy)\n\nScale the current block given the ratio in x and y direction"
+        },
+        {
+            "chunk_id": 281,
+            "text": "block.shift(dx, dy)\n\nMove the current block with the shift distances in x and y direction"
+        },
+        {
+            "chunk_id": 282,
+            "text": "block1.is in(block2)\n\nWhether block1 is inside of block2"
+        },
+        {
+            "chunk_id": 283,
+            "text": "block1.intersect(block2)\n\nReturn the intersection region of block1 and block2. Coordinate type to be determined based on the inputs."
+        },
+        {
+            "chunk_id": 284,
+            "text": "block1.union(block2)\n\nReturn the union region of block1 and block2. Coordinate type to be determined based on the inputs."
+        },
+        {
+            "chunk_id": 285,
+            "text": "block1.relative to(block2)\n\nConvert the absolute coordinates of block1 to relative coordinates to block2"
+        },
+        {
+            "chunk_id": 286,
+            "text": "block1.condition on(block2)\n\nCalculate the absolute coordinates of block1 given the canvas block2\u2019s absolute coordinates"
+        },
+        {
+            "chunk_id": 287,
+            "text": "block.crop image(image)"
+        },
+        {
+            "chunk_id": 288,
+            "text": "Obtain the image segments in the block region"
+        },
+        {
+            "chunk_id": 289,
+            "text": "3.4 Storage and visualization"
+        },
+        {
+            "chunk_id": 290,
+            "text": "The end goal of DIA is to transform the image-based document data into a structured database. LayoutParser supports exporting layout data into di\ufb00erent formats like JSON, csv, and will add the support for the METS/ALTO XML format 14 . It can also"
+        },
+        {
+            "chunk_id": 291,
+            "text": "ased document data into a structured database. LayoutParser supports exporting layout data into di\ufb00erent formats like JSON, csv, and will add the support for the METS/ALTO XML format 14 . It can also load datasets from layout analysis-speci\ufb01c formats"
+        },
+        {
+            "chunk_id": 292,
+            "text": "utParser supports exporting layout data into di\ufb00erent formats like JSON, csv, and will add the support for the METS/ALTO XML format 14 . It can also load datasets from layout analysis-speci\ufb01c formats like COCO [38] and the Page Format [25] for"
+        },
+        {
+            "chunk_id": 293,
+            "text": "di\ufb00erent formats like JSON, csv, and will add the support for the METS/ALTO XML format 14 . It can also load datasets from layout analysis-speci\ufb01c formats like COCO [38] and the Page Format [25] for training layout models (Section 3.5). Visualization"
+        },
+        {
+            "chunk_id": 294,
+            "text": "upport for the METS/ALTO XML format 14 . It can also load datasets from layout analysis-speci\ufb01c formats like COCO [38] and the Page Format [25] for training layout models (Section 3.5). Visualization of the layout detection results is critical for"
+        },
+        {
+            "chunk_id": 295,
+            "text": "also load datasets from layout analysis-speci\ufb01c formats like COCO [38] and the Page Format [25] for training layout models (Section 3.5). Visualization of the layout detection results is critical for both presentation and debugging. LayoutParser is"
+        },
+        {
+            "chunk_id": 296,
+            "text": "ormats like COCO [38] and the Page Format [25] for training layout models (Section 3.5). Visualization of the layout detection results is critical for both presentation and debugging. LayoutParser is built with an integrated API for displaying the"
+        },
+        {
+            "chunk_id": 297,
+            "text": "or training layout models (Section 3.5). Visualization of the layout detection results is critical for both presentation and debugging. LayoutParser is built with an integrated API for displaying the layout information along with the original"
+        },
+        {
+            "chunk_id": 298,
+            "text": "sualization of the layout detection results is critical for both presentation and debugging. LayoutParser is built with an integrated API for displaying the layout information along with the original document image. Shown in Figure 3, it enables"
+        },
+        {
+            "chunk_id": 299,
+            "text": "critical for both presentation and debugging. LayoutParser is built with an integrated API for displaying the layout information along with the original document image. Shown in Figure 3, it enables presenting layout data with rich meta information"
+        },
+        {
+            "chunk_id": 300,
+            "text": "outParser is built with an integrated API for displaying the layout information along with the original document image. Shown in Figure 3, it enables presenting layout data with rich meta information and features in di\ufb00erent modes. More detailed"
+        },
+        {
+            "chunk_id": 301,
+            "text": "displaying the layout information along with the original document image. Shown in Figure 3, it enables presenting layout data with rich meta information and features in di\ufb00erent modes. More detailed information can be found in the online"
+        },
+        {
+            "chunk_id": 302,
+            "text": "with the original document image. Shown in Figure 3, it enables presenting layout data with rich meta information and features in di\ufb00erent modes. More detailed information can be found in the online LayoutParser documentation page."
+        },
+        {
+            "chunk_id": 303,
+            "text": "3.5 Customized Model Training"
+        },
+        {
+            "chunk_id": 304,
+            "text": "Besides the o\ufb00-the-shelf library, LayoutParser is also highly customizable with supports for highly unique and challenging document analysis tasks. Target document images can be vastly di\ufb00erent from the existing datasets for train- ing layout models,"
+        },
+        {
+            "chunk_id": 305,
+            "text": "lso highly customizable with supports for highly unique and challenging document analysis tasks. Target document images can be vastly di\ufb00erent from the existing datasets for train- ing layout models, which leads to low layout detection accuracy."
+        },
+        {
+            "chunk_id": 306,
+            "text": "ly unique and challenging document analysis tasks. Target document images can be vastly di\ufb00erent from the existing datasets for train- ing layout models, which leads to low layout detection accuracy. Training data"
+        },
+        {
+            "chunk_id": 307,
+            "text": "14 https://altoxml.github.io"
+        },
+        {
+            "chunk_id": 308,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 309,
+            "text": "Fig.3: Layout detection and OCR results visualization generated by the LayoutParser APIs. Mode I directly overlays the layout region bounding boxes and categories over the original image. Mode II recreates the original document via drawing the OCR\u2019d"
+        },
+        {
+            "chunk_id": 310,
+            "text": "ion generated by the LayoutParser APIs. Mode I directly overlays the layout region bounding boxes and categories over the original image. Mode II recreates the original document via drawing the OCR\u2019d texts at their corresponding positions on the"
+        },
+        {
+            "chunk_id": 311,
+            "text": "directly overlays the layout region bounding boxes and categories over the original image. Mode II recreates the original document via drawing the OCR\u2019d texts at their corresponding positions on the image canvas. In this \ufb01gure, tokens in textual"
+        },
+        {
+            "chunk_id": 312,
+            "text": "oxes and categories over the original image. Mode II recreates the original document via drawing the OCR\u2019d texts at their corresponding positions on the image canvas. In this \ufb01gure, tokens in textual regions are \ufb01ltered using the API and then"
+        },
+        {
+            "chunk_id": 313,
+            "text": ". Mode II recreates the original document via drawing the OCR\u2019d texts at their corresponding positions on the image canvas. In this \ufb01gure, tokens in textual regions are \ufb01ltered using the API and then displayed."
+        },
+        {
+            "chunk_id": 314,
+            "text": "can also be highly sensitive and not sharable publicly. To overcome these chal- lenges, LayoutParser is built with rich features for e\ufb03cient data annotation and customized model training."
+        },
+        {
+            "chunk_id": 315,
+            "text": "LayoutParser incorporates a toolkit optimized for annotating document lay- outs using object-level active learning [32]. With the help from a layout detection model trained along with labeling, only the most important layout objects within each"
+        },
+        {
+            "chunk_id": 316,
+            "text": "for annotating document lay- outs using object-level active learning [32]. With the help from a layout detection model trained along with labeling, only the most important layout objects within each image, rather than the whole image, are required"
+        },
+        {
+            "chunk_id": 317,
+            "text": "evel active learning [32]. With the help from a layout detection model trained along with labeling, only the most important layout objects within each image, rather than the whole image, are required for labeling. The rest of the regions are"
+        },
+        {
+            "chunk_id": 318,
+            "text": "rom a layout detection model trained along with labeling, only the most important layout objects within each image, rather than the whole image, are required for labeling. The rest of the regions are automatically annotated with high con\ufb01dence"
+        },
+        {
+            "chunk_id": 319,
+            "text": "ith labeling, only the most important layout objects within each image, rather than the whole image, are required for labeling. The rest of the regions are automatically annotated with high con\ufb01dence predictions from the layout detection model. This"
+        },
+        {
+            "chunk_id": 320,
+            "text": "ts within each image, rather than the whole image, are required for labeling. The rest of the regions are automatically annotated with high con\ufb01dence predictions from the layout detection model. This allows a layout dataset to be created more"
+        },
+        {
+            "chunk_id": 321,
+            "text": "image, are required for labeling. The rest of the regions are automatically annotated with high con\ufb01dence predictions from the layout detection model. This allows a layout dataset to be created more e\ufb03ciently with only around 60% of the labeling"
+        },
+        {
+            "chunk_id": 322,
+            "text": "the regions are automatically annotated with high con\ufb01dence predictions from the layout detection model. This allows a layout dataset to be created more e\ufb03ciently with only around 60% of the labeling budget."
+        },
+        {
+            "chunk_id": 323,
+            "text": "After the training dataset is curated, LayoutParser supports di\ufb00erent modes for training the layout models. Fine-tuning can be used for training models on a small newly-labeled dataset by initializing the model with existing pre-trained weights."
+        },
+        {
+            "chunk_id": 324,
+            "text": "arser supports di\ufb00erent modes for training the layout models. Fine-tuning can be used for training models on a small newly-labeled dataset by initializing the model with existing pre-trained weights. Training from scratch can be helpful when the"
+        },
+        {
+            "chunk_id": 325,
+            "text": "layout models. Fine-tuning can be used for training models on a small newly-labeled dataset by initializing the model with existing pre-trained weights. Training from scratch can be helpful when the source dataset and target are signi\ufb01cantly di\ufb00erent"
+        },
+        {
+            "chunk_id": 326,
+            "text": "models on a small newly-labeled dataset by initializing the model with existing pre-trained weights. Training from scratch can be helpful when the source dataset and target are signi\ufb01cantly di\ufb00erent and a large training set is available. However, as"
+        },
+        {
+            "chunk_id": 327,
+            "text": "izing the model with existing pre-trained weights. Training from scratch can be helpful when the source dataset and target are signi\ufb01cantly di\ufb00erent and a large training set is available. However, as suggested in Studer et al.\u2019s work[33], loading"
+        },
+        {
+            "chunk_id": 328,
+            "text": "ts. Training from scratch can be helpful when the source dataset and target are signi\ufb01cantly di\ufb00erent and a large training set is available. However, as suggested in Studer et al.\u2019s work[33], loading pre-trained weights on large-scale datasets like"
+        },
+        {
+            "chunk_id": 329,
+            "text": "source dataset and target are signi\ufb01cantly di\ufb00erent and a large training set is available. However, as suggested in Studer et al.\u2019s work[33], loading pre-trained weights on large-scale datasets like ImageNet [5], even from totally di\ufb00erent domains,"
+        },
+        {
+            "chunk_id": 330,
+            "text": "nt and a large training set is available. However, as suggested in Studer et al.\u2019s work[33], loading pre-trained weights on large-scale datasets like ImageNet [5], even from totally di\ufb00erent domains, can still boost model performance. Through the"
+        },
+        {
+            "chunk_id": 331,
+            "text": "er, as suggested in Studer et al.\u2019s work[33], loading pre-trained weights on large-scale datasets like ImageNet [5], even from totally di\ufb00erent domains, can still boost model performance. Through the integrated API provided by LayoutParser, users can"
+        },
+        {
+            "chunk_id": 332,
+            "text": "ng pre-trained weights on large-scale datasets like ImageNet [5], even from totally di\ufb00erent domains, can still boost model performance. Through the integrated API provided by LayoutParser, users can easily compare model performances on the benchmark"
+        },
+        {
+            "chunk_id": 333,
+            "text": "ImageNet [5], even from totally di\ufb00erent domains, can still boost model performance. Through the integrated API provided by LayoutParser, users can easily compare model performances on the benchmark datasets."
+        },
+        {
+            "chunk_id": 334,
+            "text": "9\n\n10\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 335,
+            "text": "Fig.4: Illustration of (a) the original historical Japanese document with layout detection results and (b) a recreated version of the document image that achieves much better character recognition recall. The reorganization algorithm rearranges the"
+        },
+        {
+            "chunk_id": 336,
+            "text": "l Japanese document with layout detection results and (b) a recreated version of the document image that achieves much better character recognition recall. The reorganization algorithm rearranges the tokens based on the their detected bounding boxes"
+        },
+        {
+            "chunk_id": 337,
+            "text": "and (b) a recreated version of the document image that achieves much better character recognition recall. The reorganization algorithm rearranges the tokens based on the their detected bounding boxes given a maximum allowed height."
+        },
+        {
+            "chunk_id": 338,
+            "text": "4 LayoutParser Community Platform"
+        },
+        {
+            "chunk_id": 339,
+            "text": "Another focus of LayoutParser is promoting the reusability of layout detection models and full digitization pipelines. Similar to many existing deep learning libraries, LayoutParser comes with a community model hub for distributing layout models."
+        },
+        {
+            "chunk_id": 340,
+            "text": "reusability of layout detection models and full digitization pipelines. Similar to many existing deep learning libraries, LayoutParser comes with a community model hub for distributing layout models. End-users can upload their self-trained models to"
+        },
+        {
+            "chunk_id": 341,
+            "text": "gitization pipelines. Similar to many existing deep learning libraries, LayoutParser comes with a community model hub for distributing layout models. End-users can upload their self-trained models to the model hub, and these models can be loaded into"
+        },
+        {
+            "chunk_id": 342,
+            "text": "learning libraries, LayoutParser comes with a community model hub for distributing layout models. End-users can upload their self-trained models to the model hub, and these models can be loaded into a similar interface as the currently available"
+        },
+        {
+            "chunk_id": 343,
+            "text": "community model hub for distributing layout models. End-users can upload their self-trained models to the model hub, and these models can be loaded into a similar interface as the currently available LayoutParser pre-trained models. For example, the"
+        },
+        {
+            "chunk_id": 344,
+            "text": ". End-users can upload their self-trained models to the model hub, and these models can be loaded into a similar interface as the currently available LayoutParser pre-trained models. For example, the model trained on the News Navigator dataset [17]"
+        },
+        {
+            "chunk_id": 345,
+            "text": "to the model hub, and these models can be loaded into a similar interface as the currently available LayoutParser pre-trained models. For example, the model trained on the News Navigator dataset [17] has been incorporated in the model hub."
+        },
+        {
+            "chunk_id": 346,
+            "text": "Beyond DL models, LayoutParser also promotes the sharing of entire doc- ument digitization pipelines. For example, sometimes the pipeline requires the combination of multiple DL models to achieve better accuracy. Currently, pipelines are mainly"
+        },
+        {
+            "chunk_id": 347,
+            "text": "the sharing of entire doc- ument digitization pipelines. For example, sometimes the pipeline requires the combination of multiple DL models to achieve better accuracy. Currently, pipelines are mainly described in academic papers and implementations"
+        },
+        {
+            "chunk_id": 348,
+            "text": "elines. For example, sometimes the pipeline requires the combination of multiple DL models to achieve better accuracy. Currently, pipelines are mainly described in academic papers and implementations are often not pub- licly available. To this end,"
+        },
+        {
+            "chunk_id": 349,
+            "text": "res the combination of multiple DL models to achieve better accuracy. Currently, pipelines are mainly described in academic papers and implementations are often not pub- licly available. To this end, the LayoutParser community platform also enables"
+        },
+        {
+            "chunk_id": 350,
+            "text": "eve better accuracy. Currently, pipelines are mainly described in academic papers and implementations are often not pub- licly available. To this end, the LayoutParser community platform also enables the sharing of layout pipelines to promote the"
+        },
+        {
+            "chunk_id": 351,
+            "text": "ainly described in academic papers and implementations are often not pub- licly available. To this end, the LayoutParser community platform also enables the sharing of layout pipelines to promote the discussion and reuse of techniques. For each"
+        },
+        {
+            "chunk_id": 352,
+            "text": "entations are often not pub- licly available. To this end, the LayoutParser community platform also enables the sharing of layout pipelines to promote the discussion and reuse of techniques. For each shared pipeline, it has a dedicated project page,"
+        },
+        {
+            "chunk_id": 353,
+            "text": "his end, the LayoutParser community platform also enables the sharing of layout pipelines to promote the discussion and reuse of techniques. For each shared pipeline, it has a dedicated project page, with links to the source code, documentation, and"
+        },
+        {
+            "chunk_id": 354,
+            "text": "enables the sharing of layout pipelines to promote the discussion and reuse of techniques. For each shared pipeline, it has a dedicated project page, with links to the source code, documentation, and an outline of the approaches. A discussion panel"
+        },
+        {
+            "chunk_id": 355,
+            "text": "e the discussion and reuse of techniques. For each shared pipeline, it has a dedicated project page, with links to the source code, documentation, and an outline of the approaches. A discussion panel is provided for exchanging ideas. Combined with"
+        },
+        {
+            "chunk_id": 356,
+            "text": "ch shared pipeline, it has a dedicated project page, with links to the source code, documentation, and an outline of the approaches. A discussion panel is provided for exchanging ideas. Combined with the core LayoutParser library, users can easily"
+        },
+        {
+            "chunk_id": 357,
+            "text": "age, with links to the source code, documentation, and an outline of the approaches. A discussion panel is provided for exchanging ideas. Combined with the core LayoutParser library, users can easily build reusable components based on the shared"
+        },
+        {
+            "chunk_id": 358,
+            "text": "ion, and an outline of the approaches. A discussion panel is provided for exchanging ideas. Combined with the core LayoutParser library, users can easily build reusable components based on the shared pipelines and apply them to solve their unique"
+        },
+        {
+            "chunk_id": 359,
+            "text": "sion panel is provided for exchanging ideas. Combined with the core LayoutParser library, users can easily build reusable components based on the shared pipelines and apply them to solve their unique problems."
+        },
+        {
+            "chunk_id": 360,
+            "text": "5 Use Cases\n\nThe core objective of LayoutParser is to make it easier to create both large-scale and light-weight document digitization pipelines. Large-scale document processing"
+        },
+        {
+            "chunk_id": 361,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 362,
+            "text": "focuses on precision, e\ufb03ciency, and robustness. The target documents may have complicated structures, and may require training multiple layout detection models to achieve the optimal accuracy. Light-weight pipelines are built for relatively simple"
+        },
+        {
+            "chunk_id": 363,
+            "text": "The target documents may have complicated structures, and may require training multiple layout detection models to achieve the optimal accuracy. Light-weight pipelines are built for relatively simple documents, with an emphasis on development ease,"
+        },
+        {
+            "chunk_id": 364,
+            "text": "res, and may require training multiple layout detection models to achieve the optimal accuracy. Light-weight pipelines are built for relatively simple documents, with an emphasis on development ease, speed and \ufb02exibility. Ideally one only needs to"
+        },
+        {
+            "chunk_id": 365,
+            "text": "tection models to achieve the optimal accuracy. Light-weight pipelines are built for relatively simple documents, with an emphasis on development ease, speed and \ufb02exibility. Ideally one only needs to use existing resources, and model training should"
+        },
+        {
+            "chunk_id": 366,
+            "text": "ght-weight pipelines are built for relatively simple documents, with an emphasis on development ease, speed and \ufb02exibility. Ideally one only needs to use existing resources, and model training should be avoided. Through two exemplar projects, we show"
+        },
+        {
+            "chunk_id": 367,
+            "text": "e documents, with an emphasis on development ease, speed and \ufb02exibility. Ideally one only needs to use existing resources, and model training should be avoided. Through two exemplar projects, we show how practitioners in both academia and industry"
+        },
+        {
+            "chunk_id": 368,
+            "text": "e, speed and \ufb02exibility. Ideally one only needs to use existing resources, and model training should be avoided. Through two exemplar projects, we show how practitioners in both academia and industry can easily build such pipelines using LayoutParser"
+        },
+        {
+            "chunk_id": 369,
+            "text": "use existing resources, and model training should be avoided. Through two exemplar projects, we show how practitioners in both academia and industry can easily build such pipelines using LayoutParser and extract high-quality structured document data"
+        },
+        {
+            "chunk_id": 370,
+            "text": "be avoided. Through two exemplar projects, we show how practitioners in both academia and industry can easily build such pipelines using LayoutParser and extract high-quality structured document data for their downstream tasks. The source code for"
+        },
+        {
+            "chunk_id": 371,
+            "text": "ow how practitioners in both academia and industry can easily build such pipelines using LayoutParser and extract high-quality structured document data for their downstream tasks. The source code for these projects will be publicly available in the"
+        },
+        {
+            "chunk_id": 372,
+            "text": "y can easily build such pipelines using LayoutParser and extract high-quality structured document data for their downstream tasks. The source code for these projects will be publicly available in the LayoutParser community hub."
+        },
+        {
+            "chunk_id": 373,
+            "text": "5.1 A Comprehensive Historical Document Digitization Pipeline"
+        },
+        {
+            "chunk_id": 374,
+            "text": "The digitization of historical documents can unlock valuable data that can shed light on many important social, economic, and historical questions. Yet due to scan noises, page wearing, and the prevalence of complicated layout structures, ob- taining"
+        },
+        {
+            "chunk_id": 375,
+            "text": "valuable data that can shed light on many important social, economic, and historical questions. Yet due to scan noises, page wearing, and the prevalence of complicated layout structures, ob- taining a structured representation of historical document"
+        },
+        {
+            "chunk_id": 376,
+            "text": "t social, economic, and historical questions. Yet due to scan noises, page wearing, and the prevalence of complicated layout structures, ob- taining a structured representation of historical document scans is often extremely complicated. In this"
+        },
+        {
+            "chunk_id": 377,
+            "text": "Yet due to scan noises, page wearing, and the prevalence of complicated layout structures, ob- taining a structured representation of historical document scans is often extremely complicated. In this example, LayoutParser was used to develop a"
+        },
+        {
+            "chunk_id": 378,
+            "text": "e prevalence of complicated layout structures, ob- taining a structured representation of historical document scans is often extremely complicated. In this example, LayoutParser was used to develop a comprehensive pipeline, shown in Figure 5, to"
+        },
+        {
+            "chunk_id": 379,
+            "text": "ob- taining a structured representation of historical document scans is often extremely complicated. In this example, LayoutParser was used to develop a comprehensive pipeline, shown in Figure 5, to gener- ate high-quality structured data from"
+        },
+        {
+            "chunk_id": 380,
+            "text": "istorical document scans is often extremely complicated. In this example, LayoutParser was used to develop a comprehensive pipeline, shown in Figure 5, to gener- ate high-quality structured data from historical Japanese \ufb01rm \ufb01nancial ta- bles with"
+        },
+        {
+            "chunk_id": 381,
+            "text": "plicated. In this example, LayoutParser was used to develop a comprehensive pipeline, shown in Figure 5, to gener- ate high-quality structured data from historical Japanese \ufb01rm \ufb01nancial ta- bles with complicated layouts. The pipeline applies two"
+        },
+        {
+            "chunk_id": 382,
+            "text": "ed to develop a comprehensive pipeline, shown in Figure 5, to gener- ate high-quality structured data from historical Japanese \ufb01rm \ufb01nancial ta- bles with complicated layouts. The pipeline applies two layout models to identify di\ufb00erent levels of"
+        },
+        {
+            "chunk_id": 383,
+            "text": "in Figure 5, to gener- ate high-quality structured data from historical Japanese \ufb01rm \ufb01nancial ta- bles with complicated layouts. The pipeline applies two layout models to identify di\ufb00erent levels of document structures and two customized OCR engines"
+        },
+        {
+            "chunk_id": 384,
+            "text": "data from historical Japanese \ufb01rm \ufb01nancial ta- bles with complicated layouts. The pipeline applies two layout models to identify di\ufb00erent levels of document structures and two customized OCR engines for optimized character recog- nition accuracy."
+        },
+        {
+            "chunk_id": 385,
+            "text": "As shown in Figure 4 (a), the document contains columns of text written vertically 15, a common style in Japanese. Due to scanning noise and archaic printing technology, the columns can be skewed or have vari- able widths, and hence cannot be eas-"
+        },
+        {
+            "chunk_id": 386,
+            "text": "columns of text written vertically 15, a common style in Japanese. Due to scanning noise and archaic printing technology, the columns can be skewed or have vari- able widths, and hence cannot be eas- ily identi\ufb01ed via rule-based methods. Within each"
+        },
+        {
+            "chunk_id": 387,
+            "text": "yle in Japanese. Due to scanning noise and archaic printing technology, the columns can be skewed or have vari- able widths, and hence cannot be eas- ily identi\ufb01ed via rule-based methods. Within each column, words are sepa- rated by white spaces of"
+        },
+        {
+            "chunk_id": 388,
+            "text": "c printing technology, the columns can be skewed or have vari- able widths, and hence cannot be eas- ily identi\ufb01ed via rule-based methods. Within each column, words are sepa- rated by white spaces of variable size, and the vertical positions of"
+        },
+        {
+            "chunk_id": 389,
+            "text": "wed or have vari- able widths, and hence cannot be eas- ily identi\ufb01ed via rule-based methods. Within each column, words are sepa- rated by white spaces of variable size, and the vertical positions of objects can be an indicator of their layout type."
+        },
+        {
+            "chunk_id": 390,
+            "text": "Fig.5: Illustration of how LayoutParser helps with the historical document digi- tization pipeline.\n\n15 A document page consists of eight rows like this. For simplicity we skip the row"
+        },
+        {
+            "chunk_id": 391,
+            "text": "segmentation discussion and refer readers to the source code when available.\n\n11\n\n12\n\nZ. Shen et al.\n\nTo decipher the complicated layout"
+        },
+        {
+            "chunk_id": 392,
+            "text": "structure, two object detection models have been trained to recognize individual columns and tokens, respectively. A small training set (400 images with approxi- mately 100 annotations each) is curated via the active learning based annotation tool"
+        },
+        {
+            "chunk_id": 393,
+            "text": "trained to recognize individual columns and tokens, respectively. A small training set (400 images with approxi- mately 100 annotations each) is curated via the active learning based annotation tool [32] in LayoutParser. The models learn to identify"
+        },
+        {
+            "chunk_id": 394,
+            "text": ", respectively. A small training set (400 images with approxi- mately 100 annotations each) is curated via the active learning based annotation tool [32] in LayoutParser. The models learn to identify both the categories and regions for each token or"
+        },
+        {
+            "chunk_id": 395,
+            "text": "ith approxi- mately 100 annotations each) is curated via the active learning based annotation tool [32] in LayoutParser. The models learn to identify both the categories and regions for each token or column via their distinct visual features. The"
+        },
+        {
+            "chunk_id": 396,
+            "text": "rated via the active learning based annotation tool [32] in LayoutParser. The models learn to identify both the categories and regions for each token or column via their distinct visual features. The layout data structure enables easy grouping of the"
+        },
+        {
+            "chunk_id": 397,
+            "text": "[32] in LayoutParser. The models learn to identify both the categories and regions for each token or column via their distinct visual features. The layout data structure enables easy grouping of the tokens within each column, and rearranging columns"
+        },
+        {
+            "chunk_id": 398,
+            "text": "both the categories and regions for each token or column via their distinct visual features. The layout data structure enables easy grouping of the tokens within each column, and rearranging columns to achieve the correct reading orders based on the"
+        },
+        {
+            "chunk_id": 399,
+            "text": "column via their distinct visual features. The layout data structure enables easy grouping of the tokens within each column, and rearranging columns to achieve the correct reading orders based on the horizontal position. Errors are identi\ufb01ed and"
+        },
+        {
+            "chunk_id": 400,
+            "text": "layout data structure enables easy grouping of the tokens within each column, and rearranging columns to achieve the correct reading orders based on the horizontal position. Errors are identi\ufb01ed and recti\ufb01ed via checking the consistency of the model"
+        },
+        {
+            "chunk_id": 401,
+            "text": "tokens within each column, and rearranging columns to achieve the correct reading orders based on the horizontal position. Errors are identi\ufb01ed and recti\ufb01ed via checking the consistency of the model predictions. Therefore, though trained on a small"
+        },
+        {
+            "chunk_id": 402,
+            "text": "s to achieve the correct reading orders based on the horizontal position. Errors are identi\ufb01ed and recti\ufb01ed via checking the consistency of the model predictions. Therefore, though trained on a small dataset, the pipeline achieves a high level of"
+        },
+        {
+            "chunk_id": 403,
+            "text": "n the horizontal position. Errors are identi\ufb01ed and recti\ufb01ed via checking the consistency of the model predictions. Therefore, though trained on a small dataset, the pipeline achieves a high level of layout detection accuracy: it achieves a 96.97 AP"
+        },
+        {
+            "chunk_id": 404,
+            "text": "d recti\ufb01ed via checking the consistency of the model predictions. Therefore, though trained on a small dataset, the pipeline achieves a high level of layout detection accuracy: it achieves a 96.97 AP [19] score across 5 categories for the column"
+        },
+        {
+            "chunk_id": 405,
+            "text": "model predictions. Therefore, though trained on a small dataset, the pipeline achieves a high level of layout detection accuracy: it achieves a 96.97 AP [19] score across 5 categories for the column detection model, and a 89.23 AP across 4 categories"
+        },
+        {
+            "chunk_id": 406,
+            "text": "mall dataset, the pipeline achieves a high level of layout detection accuracy: it achieves a 96.97 AP [19] score across 5 categories for the column detection model, and a 89.23 AP across 4 categories for the token detection model."
+        },
+        {
+            "chunk_id": 407,
+            "text": "A combination of character recognition methods is developed to tackle the unique challenges in this document. In our experiments, we found that irregular spacing between the tokens led to a low character recognition recall rate, whereas existing OCR"
+        },
+        {
+            "chunk_id": 408,
+            "text": "developed to tackle the unique challenges in this document. In our experiments, we found that irregular spacing between the tokens led to a low character recognition recall rate, whereas existing OCR models tend to perform better on densely-arranged"
+        },
+        {
+            "chunk_id": 409,
+            "text": "document. In our experiments, we found that irregular spacing between the tokens led to a low character recognition recall rate, whereas existing OCR models tend to perform better on densely-arranged texts. To overcome this challenge, we create a"
+        },
+        {
+            "chunk_id": 410,
+            "text": "egular spacing between the tokens led to a low character recognition recall rate, whereas existing OCR models tend to perform better on densely-arranged texts. To overcome this challenge, we create a document reorganization algorithm that rearranges"
+        },
+        {
+            "chunk_id": 411,
+            "text": "racter recognition recall rate, whereas existing OCR models tend to perform better on densely-arranged texts. To overcome this challenge, we create a document reorganization algorithm that rearranges the text based on the token bounding boxes"
+        },
+        {
+            "chunk_id": 412,
+            "text": "sting OCR models tend to perform better on densely-arranged texts. To overcome this challenge, we create a document reorganization algorithm that rearranges the text based on the token bounding boxes detected in the layout analysis step. Figure 4 (b)"
+        },
+        {
+            "chunk_id": 413,
+            "text": "arranged texts. To overcome this challenge, we create a document reorganization algorithm that rearranges the text based on the token bounding boxes detected in the layout analysis step. Figure 4 (b) illustrates the generated image of dense text,"
+        },
+        {
+            "chunk_id": 414,
+            "text": "create a document reorganization algorithm that rearranges the text based on the token bounding boxes detected in the layout analysis step. Figure 4 (b) illustrates the generated image of dense text, which is sent to the OCR APIs as a whole to reduce"
+        },
+        {
+            "chunk_id": 415,
+            "text": "rranges the text based on the token bounding boxes detected in the layout analysis step. Figure 4 (b) illustrates the generated image of dense text, which is sent to the OCR APIs as a whole to reduce the transaction costs. The \ufb02exible coordinate"
+        },
+        {
+            "chunk_id": 416,
+            "text": "oxes detected in the layout analysis step. Figure 4 (b) illustrates the generated image of dense text, which is sent to the OCR APIs as a whole to reduce the transaction costs. The \ufb02exible coordinate system in LayoutParser is used to transform the"
+        },
+        {
+            "chunk_id": 417,
+            "text": "e 4 (b) illustrates the generated image of dense text, which is sent to the OCR APIs as a whole to reduce the transaction costs. The \ufb02exible coordinate system in LayoutParser is used to transform the OCR results relative to their original positions"
+        },
+        {
+            "chunk_id": 418,
+            "text": "text, which is sent to the OCR APIs as a whole to reduce the transaction costs. The \ufb02exible coordinate system in LayoutParser is used to transform the OCR results relative to their original positions on the page."
+        },
+        {
+            "chunk_id": 419,
+            "text": "Additionally, it is common for historical documents to use unique fonts with di\ufb00erent glyphs, which signi\ufb01cantly degrades the accuracy of OCR models trained on modern texts. In this document, a special \ufb02at font is used for printing numbers and could"
+        },
+        {
+            "chunk_id": 420,
+            "text": "s to use unique fonts with di\ufb00erent glyphs, which signi\ufb01cantly degrades the accuracy of OCR models trained on modern texts. In this document, a special \ufb02at font is used for printing numbers and could not be detected by o\ufb00-the-shelf OCR engines. Using"
+        },
+        {
+            "chunk_id": 421,
+            "text": "igni\ufb01cantly degrades the accuracy of OCR models trained on modern texts. In this document, a special \ufb02at font is used for printing numbers and could not be detected by o\ufb00-the-shelf OCR engines. Using the highly \ufb02exible functionalities from"
+        },
+        {
+            "chunk_id": 422,
+            "text": "models trained on modern texts. In this document, a special \ufb02at font is used for printing numbers and could not be detected by o\ufb00-the-shelf OCR engines. Using the highly \ufb02exible functionalities from LayoutParser, a pipeline approach is constructed"
+        },
+        {
+            "chunk_id": 423,
+            "text": ", a special \ufb02at font is used for printing numbers and could not be detected by o\ufb00-the-shelf OCR engines. Using the highly \ufb02exible functionalities from LayoutParser, a pipeline approach is constructed that achieves a high recognition accuracy with"
+        },
+        {
+            "chunk_id": 424,
+            "text": "rs and could not be detected by o\ufb00-the-shelf OCR engines. Using the highly \ufb02exible functionalities from LayoutParser, a pipeline approach is constructed that achieves a high recognition accuracy with minimal e\ufb00ort. As the characters have unique"
+        },
+        {
+            "chunk_id": 425,
+            "text": "OCR engines. Using the highly \ufb02exible functionalities from LayoutParser, a pipeline approach is constructed that achieves a high recognition accuracy with minimal e\ufb00ort. As the characters have unique visual structures and are usually clustered"
+        },
+        {
+            "chunk_id": 426,
+            "text": "onalities from LayoutParser, a pipeline approach is constructed that achieves a high recognition accuracy with minimal e\ufb00ort. As the characters have unique visual structures and are usually clustered together, we train the layout model to identify"
+        },
+        {
+            "chunk_id": 427,
+            "text": "is constructed that achieves a high recognition accuracy with minimal e\ufb00ort. As the characters have unique visual structures and are usually clustered together, we train the layout model to identify number regions with a dedicated category."
+        },
+        {
+            "chunk_id": 428,
+            "text": "nition accuracy with minimal e\ufb00ort. As the characters have unique visual structures and are usually clustered together, we train the layout model to identify number regions with a dedicated category. Subsequently, LayoutParser crops images within"
+        },
+        {
+            "chunk_id": 429,
+            "text": "acters have unique visual structures and are usually clustered together, we train the layout model to identify number regions with a dedicated category. Subsequently, LayoutParser crops images within these regions, and identi\ufb01es characters within"
+        },
+        {
+            "chunk_id": 430,
+            "text": "ually clustered together, we train the layout model to identify number regions with a dedicated category. Subsequently, LayoutParser crops images within these regions, and identi\ufb01es characters within them using a self-trained OCR model based on a"
+        },
+        {
+            "chunk_id": 431,
+            "text": "odel to identify number regions with a dedicated category. Subsequently, LayoutParser crops images within these regions, and identi\ufb01es characters within them using a self-trained OCR model based on a CNN-RNN [6]. The model detects a total of 15"
+        },
+        {
+            "chunk_id": 432,
+            "text": "ted category. Subsequently, LayoutParser crops images within these regions, and identi\ufb01es characters within them using a self-trained OCR model based on a CNN-RNN [6]. The model detects a total of 15 possible categories, and achieves a 0.98 Jaccard"
+        },
+        {
+            "chunk_id": 433,
+            "text": "ages within these regions, and identi\ufb01es characters within them using a self-trained OCR model based on a CNN-RNN [6]. The model detects a total of 15 possible categories, and achieves a 0.98 Jaccard score16 and a 0.17 average Levinstein distances17"
+        },
+        {
+            "chunk_id": 434,
+            "text": "s within them using a self-trained OCR model based on a CNN-RNN [6]. The model detects a total of 15 possible categories, and achieves a 0.98 Jaccard score16 and a 0.17 average Levinstein distances17 for token prediction on the test set."
+        },
+        {
+            "chunk_id": 435,
+            "text": "Overall, it is possible to create an intricate and highly accurate digitization pipeline for large-scale digitization using LayoutParser. The pipeline avoids specifying the complicated rules used in traditional methods, is straightforward to develop,"
+        },
+        {
+            "chunk_id": 436,
+            "text": "highly accurate digitization pipeline for large-scale digitization using LayoutParser. The pipeline avoids specifying the complicated rules used in traditional methods, is straightforward to develop, and is robust to outliers. The DL models also"
+        },
+        {
+            "chunk_id": 437,
+            "text": "e-scale digitization using LayoutParser. The pipeline avoids specifying the complicated rules used in traditional methods, is straightforward to develop, and is robust to outliers. The DL models also generate \ufb01ne-grained results that enable creative"
+        },
+        {
+            "chunk_id": 438,
+            "text": "ine avoids specifying the complicated rules used in traditional methods, is straightforward to develop, and is robust to outliers. The DL models also generate \ufb01ne-grained results that enable creative approaches like page reorganization for OCR."
+        },
+        {
+            "chunk_id": 439,
+            "text": "16 This measures the overlap between the detected and ground-truth characters, and\n\nthe maximum is 1.\n\n17 This measures the number of edits from the ground-truth text to the predicted text,\n\nand lower is better."
+        },
+        {
+            "chunk_id": 440,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 441,
+            "text": "Fig.6: This lightweight table detector can identify tables (outlined in red) and cells (shaded in blue) in di\ufb00erent locations on a page. In very few cases (d), it might generate minor error predictions, e.g, failing to capture the top text line of a"
+        },
+        {
+            "chunk_id": 442,
+            "text": "y tables (outlined in red) and cells (shaded in blue) in di\ufb00erent locations on a page. In very few cases (d), it might generate minor error predictions, e.g, failing to capture the top text line of a table."
+        },
+        {
+            "chunk_id": 443,
+            "text": "5.2 A light-weight Visual Table Extractor"
+        },
+        {
+            "chunk_id": 444,
+            "text": "Detecting tables and parsing their structures (table extraction) are of central im- portance for many document digitization tasks. Many previous works [26, 30, 27] and tools 18 have been developed to identify and parse table structures. Yet they"
+        },
+        {
+            "chunk_id": 445,
+            "text": "(table extraction) are of central im- portance for many document digitization tasks. Many previous works [26, 30, 27] and tools 18 have been developed to identify and parse table structures. Yet they might require training complicated models from"
+        },
+        {
+            "chunk_id": 446,
+            "text": "for many document digitization tasks. Many previous works [26, 30, 27] and tools 18 have been developed to identify and parse table structures. Yet they might require training complicated models from scratch, or are only applicable for born-digital"
+        },
+        {
+            "chunk_id": 447,
+            "text": "us works [26, 30, 27] and tools 18 have been developed to identify and parse table structures. Yet they might require training complicated models from scratch, or are only applicable for born-digital PDF documents. In this section, we show how"
+        },
+        {
+            "chunk_id": 448,
+            "text": "developed to identify and parse table structures. Yet they might require training complicated models from scratch, or are only applicable for born-digital PDF documents. In this section, we show how LayoutParser can help build a light-weight accurate"
+        },
+        {
+            "chunk_id": 449,
+            "text": "et they might require training complicated models from scratch, or are only applicable for born-digital PDF documents. In this section, we show how LayoutParser can help build a light-weight accurate visual table extractor for legal docket tables"
+        },
+        {
+            "chunk_id": 450,
+            "text": "ls from scratch, or are only applicable for born-digital PDF documents. In this section, we show how LayoutParser can help build a light-weight accurate visual table extractor for legal docket tables using the existing resources with minimal e\ufb00ort."
+        },
+        {
+            "chunk_id": 451,
+            "text": "The extractor uses a pre-trained layout detection model for identifying the table regions and some simple rules for pairing the rows and the columns in the PDF image. Mask R-CNN [12] trained on the PubLayNet dataset [38] from the LayoutParser Model"
+        },
+        {
+            "chunk_id": 452,
+            "text": "model for identifying the table regions and some simple rules for pairing the rows and the columns in the PDF image. Mask R-CNN [12] trained on the PubLayNet dataset [38] from the LayoutParser Model Zoo can be used for detecting table regions. By"
+        },
+        {
+            "chunk_id": 453,
+            "text": "e simple rules for pairing the rows and the columns in the PDF image. Mask R-CNN [12] trained on the PubLayNet dataset [38] from the LayoutParser Model Zoo can be used for detecting table regions. By \ufb01ltering out model predictions of low con\ufb01dence"
+        },
+        {
+            "chunk_id": 454,
+            "text": "mns in the PDF image. Mask R-CNN [12] trained on the PubLayNet dataset [38] from the LayoutParser Model Zoo can be used for detecting table regions. By \ufb01ltering out model predictions of low con\ufb01dence and removing overlapping predictions, LayoutParser"
+        },
+        {
+            "chunk_id": 455,
+            "text": "e PubLayNet dataset [38] from the LayoutParser Model Zoo can be used for detecting table regions. By \ufb01ltering out model predictions of low con\ufb01dence and removing overlapping predictions, LayoutParser can identify the tabular regions on each page,"
+        },
+        {
+            "chunk_id": 456,
+            "text": "Model Zoo can be used for detecting table regions. By \ufb01ltering out model predictions of low con\ufb01dence and removing overlapping predictions, LayoutParser can identify the tabular regions on each page, which signi\ufb01cantly simpli\ufb01es the subsequent steps."
+        },
+        {
+            "chunk_id": 457,
+            "text": "By \ufb01ltering out model predictions of low con\ufb01dence and removing overlapping predictions, LayoutParser can identify the tabular regions on each page, which signi\ufb01cantly simpli\ufb01es the subsequent steps. By applying the line detection functions within"
+        },
+        {
+            "chunk_id": 458,
+            "text": "ce and removing overlapping predictions, LayoutParser can identify the tabular regions on each page, which signi\ufb01cantly simpli\ufb01es the subsequent steps. By applying the line detection functions within the tabular segments, provided in the utility"
+        },
+        {
+            "chunk_id": 459,
+            "text": "tParser can identify the tabular regions on each page, which signi\ufb01cantly simpli\ufb01es the subsequent steps. By applying the line detection functions within the tabular segments, provided in the utility module from LayoutParser, the pipeline can"
+        },
+        {
+            "chunk_id": 460,
+            "text": "each page, which signi\ufb01cantly simpli\ufb01es the subsequent steps. By applying the line detection functions within the tabular segments, provided in the utility module from LayoutParser, the pipeline can identify the three distinct columns in the tables."
+        },
+        {
+            "chunk_id": 461,
+            "text": "uent steps. By applying the line detection functions within the tabular segments, provided in the utility module from LayoutParser, the pipeline can identify the three distinct columns in the tables. A row clustering method is then applied via"
+        },
+        {
+            "chunk_id": 462,
+            "text": "unctions within the tabular segments, provided in the utility module from LayoutParser, the pipeline can identify the three distinct columns in the tables. A row clustering method is then applied via analyzing the y coordinates of token bounding"
+        },
+        {
+            "chunk_id": 463,
+            "text": "in the utility module from LayoutParser, the pipeline can identify the three distinct columns in the tables. A row clustering method is then applied via analyzing the y coordinates of token bounding boxes in the left-most column, which are obtained"
+        },
+        {
+            "chunk_id": 464,
+            "text": "line can identify the three distinct columns in the tables. A row clustering method is then applied via analyzing the y coordinates of token bounding boxes in the left-most column, which are obtained from the OCR engines. A non-maximal suppression"
+        },
+        {
+            "chunk_id": 465,
+            "text": "the tables. A row clustering method is then applied via analyzing the y coordinates of token bounding boxes in the left-most column, which are obtained from the OCR engines. A non-maximal suppression algorithm is used to remove duplicated rows with"
+        },
+        {
+            "chunk_id": 466,
+            "text": "ed via analyzing the y coordinates of token bounding boxes in the left-most column, which are obtained from the OCR engines. A non-maximal suppression algorithm is used to remove duplicated rows with extremely small gaps. Shown in Figure 6, the built"
+        },
+        {
+            "chunk_id": 467,
+            "text": "g boxes in the left-most column, which are obtained from the OCR engines. A non-maximal suppression algorithm is used to remove duplicated rows with extremely small gaps. Shown in Figure 6, the built pipeline can detect tables at di\ufb00erent positions"
+        },
+        {
+            "chunk_id": 468,
+            "text": "ed from the OCR engines. A non-maximal suppression algorithm is used to remove duplicated rows with extremely small gaps. Shown in Figure 6, the built pipeline can detect tables at di\ufb00erent positions on a page accurately. Continued tables from"
+        },
+        {
+            "chunk_id": 469,
+            "text": "ession algorithm is used to remove duplicated rows with extremely small gaps. Shown in Figure 6, the built pipeline can detect tables at di\ufb00erent positions on a page accurately. Continued tables from di\ufb00erent pages are concatenated, and a structured"
+        },
+        {
+            "chunk_id": 470,
+            "text": "with extremely small gaps. Shown in Figure 6, the built pipeline can detect tables at di\ufb00erent positions on a page accurately. Continued tables from di\ufb00erent pages are concatenated, and a structured table representation has been easily created."
+        },
+        {
+            "chunk_id": 471,
+            "text": "18 https://github.com/atlanhq/camelot, https://github.com/tabulapdf/tabula\n\n13\n\n14\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 472,
+            "text": "6 Conclusion"
+        },
+        {
+            "chunk_id": 473,
+            "text": "LayoutParser provides a comprehensive toolkit for deep learning-based document image analysis. The o\ufb00-the-shelf library is easy to install, and can be used to build \ufb02exible and accurate pipelines for processing documents with complicated structures."
+        },
+        {
+            "chunk_id": 474,
+            "text": "deep learning-based document image analysis. The o\ufb00-the-shelf library is easy to install, and can be used to build \ufb02exible and accurate pipelines for processing documents with complicated structures. It also supports high-level customization and"
+        },
+        {
+            "chunk_id": 475,
+            "text": "he o\ufb00-the-shelf library is easy to install, and can be used to build \ufb02exible and accurate pipelines for processing documents with complicated structures. It also supports high-level customization and enables easy labeling and training of DL models on"
+        },
+        {
+            "chunk_id": 476,
+            "text": "be used to build \ufb02exible and accurate pipelines for processing documents with complicated structures. It also supports high-level customization and enables easy labeling and training of DL models on unique document image datasets. The LayoutParser"
+        },
+        {
+            "chunk_id": 477,
+            "text": "for processing documents with complicated structures. It also supports high-level customization and enables easy labeling and training of DL models on unique document image datasets. The LayoutParser community platform facilitates sharing DL models"
+        },
+        {
+            "chunk_id": 478,
+            "text": "res. It also supports high-level customization and enables easy labeling and training of DL models on unique document image datasets. The LayoutParser community platform facilitates sharing DL models and DIA pipelines, inviting discussion and"
+        },
+        {
+            "chunk_id": 479,
+            "text": "ion and enables easy labeling and training of DL models on unique document image datasets. The LayoutParser community platform facilitates sharing DL models and DIA pipelines, inviting discussion and promoting code reproducibility and reusability."
+        },
+        {
+            "chunk_id": 480,
+            "text": "models on unique document image datasets. The LayoutParser community platform facilitates sharing DL models and DIA pipelines, inviting discussion and promoting code reproducibility and reusability. The LayoutParser team is committed to keeping the"
+        },
+        {
+            "chunk_id": 481,
+            "text": "outParser community platform facilitates sharing DL models and DIA pipelines, inviting discussion and promoting code reproducibility and reusability. The LayoutParser team is committed to keeping the library updated continuously and bringing the most"
+        },
+        {
+            "chunk_id": 482,
+            "text": "models and DIA pipelines, inviting discussion and promoting code reproducibility and reusability. The LayoutParser team is committed to keeping the library updated continuously and bringing the most recent advances in DL-based DIA, such as"
+        },
+        {
+            "chunk_id": 483,
+            "text": "ssion and promoting code reproducibility and reusability. The LayoutParser team is committed to keeping the library updated continuously and bringing the most recent advances in DL-based DIA, such as multi-modal document modeling [37, 36, 9] (an"
+        },
+        {
+            "chunk_id": 484,
+            "text": "eusability. The LayoutParser team is committed to keeping the library updated continuously and bringing the most recent advances in DL-based DIA, such as multi-modal document modeling [37, 36, 9] (an upcoming priority), to a diverse audience of"
+        },
+        {
+            "chunk_id": 485,
+            "text": "d to keeping the library updated continuously and bringing the most recent advances in DL-based DIA, such as multi-modal document modeling [37, 36, 9] (an upcoming priority), to a diverse audience of end-users."
+        },
+        {
+            "chunk_id": 486,
+            "text": "Acknowledgements We thank the anonymous reviewers for their comments and suggestions. This project is supported in part by NSF Grant OIA-2033558 and funding from the Harvard Data Science Initiative and Harvard Catalyst. Zejiang Shen thanks Doug"
+        },
+        {
+            "chunk_id": 487,
+            "text": "wers for their comments and suggestions. This project is supported in part by NSF Grant OIA-2033558 and funding from the Harvard Data Science Initiative and Harvard Catalyst. Zejiang Shen thanks Doug Downey for suggestions."
+        },
+        {
+            "chunk_id": 488,
+            "text": "References"
+        },
+        {
+            "chunk_id": 489,
+            "text": "[1] Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., Corrado, G.S., Davis, A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J.,"
+        },
+        {
+            "chunk_id": 490,
+            "text": "E., Chen, Z., Citro, C., Corrado, G.S., Davis, A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Man\u00b4e, D., Monga, R., Moore, S., Murray, D., Olah,"
+        },
+        {
+            "chunk_id": 491,
+            "text": "Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Man\u00b4e, D., Monga, R., Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B.,"
+        },
+        {
+            "chunk_id": 492,
+            "text": "low, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Man\u00b4e, D., Monga, R., Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke,"
+        },
+        {
+            "chunk_id": 493,
+            "text": "Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Man\u00b4e, D., Monga, R., Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Vi\u00b4egas, F., Vinyals, O.,"
+        },
+        {
+            "chunk_id": 494,
+            "text": "nberg, J., Man\u00b4e, D., Monga, R., Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Vi\u00b4egas, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y.,"
+        },
+        {
+            "chunk_id": 495,
+            "text": "ray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Vi\u00b4egas, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y., Zheng, X.: TensorFlow: Large-scale machine"
+        },
+        {
+            "chunk_id": 496,
+            "text": ", Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Vi\u00b4egas, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y., Zheng, X.: TensorFlow: Large-scale machine learning on heterogeneous systems (2015),"
+        },
+        {
+            "chunk_id": 497,
+            "text": "Tucker, P., Vanhoucke, V., Vasudevan, V., Vi\u00b4egas, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y., Zheng, X.: TensorFlow: Large-scale machine learning on heterogeneous systems (2015), https://www.tensorflow.org/, software available"
+        },
+        {
+            "chunk_id": 498,
+            "text": "s, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y., Zheng, X.: TensorFlow: Large-scale machine learning on heterogeneous systems (2015), https://www.tensorflow.org/, software available from tensor\ufb02ow.org"
+        },
+        {
+            "chunk_id": 499,
+            "text": "[2] Alberti, M., Pondenkandath, V., W\u00a8ursch, M., Ingold, R., Liwicki, M.: Deepdiva: a highly-functional python framework for reproducible experiments. In: 2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR). pp."
+        },
+        {
+            "chunk_id": 500,
+            "text": ", M., Ingold, R., Liwicki, M.: Deepdiva: a highly-functional python framework for reproducible experiments. In: 2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 423\u2013428. IEEE (2018)"
+        },
+        {
+            "chunk_id": 501,
+            "text": "[3] Antonacopoulos, A., Bridson, D., Papadopoulos, C., Pletschacher, S.: A realistic dataset for performance evaluation of document layout analysis. In: 2009 10th International Conference on Document Analysis and Recognition. pp. 296\u2013300. IEEE (2009)"
+        },
+        {
+            "chunk_id": 502,
+            "text": "[4] Baek, Y., Lee, B., Han, D., Yun, S., Lee, H.: Character region awareness for text detection. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp. 9365\u20139374 (2019)"
+        },
+        {
+            "chunk_id": 503,
+            "text": "[5] Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L.: ImageNet: A Large-Scale\n\nHierarchical Image Database. In: CVPR09 (2009)"
+        },
+        {
+            "chunk_id": 504,
+            "text": "[6] Deng, Y., Kanervisto, A., Ling, J., Rush, A.M.: Image-to-markup generation with coarse-to-\ufb01ne attention. In: International Conference on Machine Learning. pp. 980\u2013989. PMLR (2017)"
+        },
+        {
+            "chunk_id": 505,
+            "text": "[7] Ganin, Y., Lempitsky, V.: Unsupervised domain adaptation by backpropagation. In: International conference on machine learning. pp. 1180\u20131189. PMLR (2015)"
+        },
+        {
+            "chunk_id": 506,
+            "text": "LayoutParser: A Uni\ufb01ed Toolkit for DL-Based DIA"
+        },
+        {
+            "chunk_id": 507,
+            "text": "[8] Gardner, M., Grus, J., Neumann, M., Tafjord, O., Dasigi, P., Liu, N., Peters, M., Schmitz, M., Zettlemoyer, L.: Allennlp: A deep semantic natural language processing platform. arXiv preprint arXiv:1803.07640 (2018) (cid:32)Lukasz Garncarek,"
+        },
+        {
+            "chunk_id": 508,
+            "text": "rd, O., Dasigi, P., Liu, N., Peters, M., Schmitz, M., Zettlemoyer, L.: Allennlp: A deep semantic natural language processing platform. arXiv preprint arXiv:1803.07640 (2018) (cid:32)Lukasz Garncarek, Powalski, R., Stanis(cid:32)lawek, T., Topolski,"
+        },
+        {
+            "chunk_id": 509,
+            "text": "M., Zettlemoyer, L.: Allennlp: A deep semantic natural language processing platform. arXiv preprint arXiv:1803.07640 (2018) (cid:32)Lukasz Garncarek, Powalski, R., Stanis(cid:32)lawek, T., Topolski, B., Halama, P., Grali\u00b4nski, F.: Lambert:"
+        },
+        {
+            "chunk_id": 510,
+            "text": "mantic natural language processing platform. arXiv preprint arXiv:1803.07640 (2018) (cid:32)Lukasz Garncarek, Powalski, R., Stanis(cid:32)lawek, T., Topolski, B., Halama, P., Grali\u00b4nski, F.: Lambert: Layout-aware (language) modeling using bert for"
+        },
+        {
+            "chunk_id": 511,
+            "text": "iv preprint arXiv:1803.07640 (2018) (cid:32)Lukasz Garncarek, Powalski, R., Stanis(cid:32)lawek, T., Topolski, B., Halama, P., Grali\u00b4nski, F.: Lambert: Layout-aware (language) modeling using bert for in- formation extraction (2020)"
+        },
+        {
+            "chunk_id": 512,
+            "text": "[9]"
+        },
+        {
+            "chunk_id": 513,
+            "text": "[10] Graves, A., Fern\u00b4andez, S., Gomez, F., Schmidhuber, J.: Connectionist temporal classi\ufb01cation: labelling unsegmented sequence data with recurrent neural networks. In: Proceedings of the 23rd international conference on Machine learning. pp."
+        },
+        {
+            "chunk_id": 514,
+            "text": "chmidhuber, J.: Connectionist temporal classi\ufb01cation: labelling unsegmented sequence data with recurrent neural networks. In: Proceedings of the 23rd international conference on Machine learning. pp. 369\u2013376 (2006)"
+        },
+        {
+            "chunk_id": 515,
+            "text": "[11] Harley, A.W., Ufkes, A., Derpanis, K.G.: Evaluation of deep convolutional nets for document image classi\ufb01cation and retrieval. In: 2015 13th International Conference on Document Analysis and Recognition (ICDAR). pp. 991\u2013995. IEEE (2015) [12] He,"
+        },
+        {
+            "chunk_id": 516,
+            "text": "ation of deep convolutional nets for document image classi\ufb01cation and retrieval. In: 2015 13th International Conference on Document Analysis and Recognition (ICDAR). pp. 991\u2013995. IEEE (2015) [12] He, K., Gkioxari, G., Doll\u00b4ar, P., Girshick, R.: Mask"
+        },
+        {
+            "chunk_id": 517,
+            "text": "e classi\ufb01cation and retrieval. In: 2015 13th International Conference on Document Analysis and Recognition (ICDAR). pp. 991\u2013995. IEEE (2015) [12] He, K., Gkioxari, G., Doll\u00b4ar, P., Girshick, R.: Mask r-cnn. In: Proceedings of the"
+        },
+        {
+            "chunk_id": 518,
+            "text": "IEEE international conference on computer vision. pp. 2961\u20132969 (2017)"
+        },
+        {
+            "chunk_id": 519,
+            "text": "[13] He, K., Zhang, X., Ren, S., Sun, J.: Deep residual learning for image recognition. In: Proceedings of the IEEE conference on computer vision and pattern recognition. pp. 770\u2013778 (2016)"
+        },
+        {
+            "chunk_id": 520,
+            "text": "[14] Kay, A.: Tesseract: An open-source optical character recognition engine. Linux J.\n\n2007(159), 2 (Jul 2007)"
+        },
+        {
+            "chunk_id": 521,
+            "text": "[15] Lamiroy, B., Lopresti, D.: An open architecture for end-to-end document analysis benchmarking. In: 2011 International Conference on Document Analysis and Recognition. pp. 42\u201347. IEEE (2011)"
+        },
+        {
+            "chunk_id": 522,
+            "text": "[16] Lee, B.C., Weld, D.S.: Newspaper navigator: Open faceted search for 1.5 million images. In: Adjunct Publication of the 33rd Annual ACM Sym- posium on User Interface Software and Technology. p. 120\u2013122. UIST \u201920 Adjunct, Association for Computing"
+        },
+        {
+            "chunk_id": 523,
+            "text": "en faceted search for 1.5 million images. In: Adjunct Publication of the 33rd Annual ACM Sym- posium on User Interface Software and Technology. p. 120\u2013122. UIST \u201920 Adjunct, Association for Computing Machinery, New York, NY, USA (2020)."
+        },
+        {
+            "chunk_id": 524,
+            "text": "ges. In: Adjunct Publication of the 33rd Annual ACM Sym- posium on User Interface Software and Technology. p. 120\u2013122. UIST \u201920 Adjunct, Association for Computing Machinery, New York, NY, USA (2020). https://doi.org/10.1145/3379350.3416143,"
+        },
+        {
+            "chunk_id": 525,
+            "text": "Annual ACM Sym- posium on User Interface Software and Technology. p. 120\u2013122. UIST \u201920 Adjunct, Association for Computing Machinery, New York, NY, USA (2020). https://doi.org/10.1145/3379350.3416143, https://doi-org.offcampus."
+        },
+        {
+            "chunk_id": 526,
+            "text": "ser Interface Software and Technology. p. 120\u2013122. UIST \u201920 Adjunct, Association for Computing Machinery, New York, NY, USA (2020). https://doi.org/10.1145/3379350.3416143, https://doi-org.offcampus. lib.washington.edu/10.1145/3379350.3416143"
+        },
+        {
+            "chunk_id": 527,
+            "text": "[17] Lee, B.C.G., Mears, J., Jakeway, E., Ferriter, M., Adams, C., Yarasavage, N., Thomas, D., Zwaard, K., Weld, D.S.: The Newspaper Navigator Dataset: Extracting Headlines and Visual Content from 16 Million Historic Newspaper Pages in Chronicling"
+        },
+        {
+            "chunk_id": 528,
+            "text": "er, M., Adams, C., Yarasavage, N., Thomas, D., Zwaard, K., Weld, D.S.: The Newspaper Navigator Dataset: Extracting Headlines and Visual Content from 16 Million Historic Newspaper Pages in Chronicling America, p. 3055\u20133062. Association for Computing"
+        },
+        {
+            "chunk_id": 529,
+            "text": "aard, K., Weld, D.S.: The Newspaper Navigator Dataset: Extracting Headlines and Visual Content from 16 Million Historic Newspaper Pages in Chronicling America, p. 3055\u20133062. Association for Computing Machinery, New York, NY, USA (2020),"
+        },
+        {
+            "chunk_id": 530,
+            "text": "avigator Dataset: Extracting Headlines and Visual Content from 16 Million Historic Newspaper Pages in Chronicling America, p. 3055\u20133062. Association for Computing Machinery, New York, NY, USA (2020), https://doi.org/10.1145/3340531.3412767"
+        },
+        {
+            "chunk_id": 531,
+            "text": "[18] Li, M., Cui, L., Huang, S., Wei, F., Zhou, M., Li, Z.: Tablebank: Table benchmark for image-based table detection and recognition. arXiv preprint arXiv:1903.01949 (2019)"
+        },
+        {
+            "chunk_id": 532,
+            "text": "[19] Lin, T.Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D., Doll\u00b4ar, P., Zitnick, C.L.: Microsoft coco: Common objects in context. In: European conference on computer vision. pp. 740\u2013755. Springer (2014)"
+        },
+        {
+            "chunk_id": 533,
+            "text": "[20] Long, J., Shelhamer, E., Darrell, T.: Fully convolutional networks for semantic segmentation. In: Proceedings of the IEEE conference on computer vision and pattern recognition. pp. 3431\u20133440 (2015)"
+        },
+        {
+            "chunk_id": 534,
+            "text": "[21] Neudecker, C., Schlarb, S., Dogan, Z.M., Missier, P., Su\ufb01, S., Williams, A., Wolsten- croft, K.: An experimental work\ufb02ow development platform for historical document digitisation and analysis. In: Proceedings of the 2011 workshop on historical"
+        },
+        {
+            "chunk_id": 535,
+            "text": "sier, P., Su\ufb01, S., Williams, A., Wolsten- croft, K.: An experimental work\ufb02ow development platform for historical document digitisation and analysis. In: Proceedings of the 2011 workshop on historical document imaging and processing. pp. 161\u2013168"
+        },
+        {
+            "chunk_id": 536,
+            "text": "ft, K.: An experimental work\ufb02ow development platform for historical document digitisation and analysis. In: Proceedings of the 2011 workshop on historical document imaging and processing. pp. 161\u2013168 (2011)"
+        },
+        {
+            "chunk_id": 537,
+            "text": "[22] Oliveira, S.A., Seguin, B., Kaplan, F.: dhsegment: A generic deep-learning approach for document segmentation. In: 2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 7\u201312. IEEE (2018)\n\n15\n\n16\n\nZ. Shen et al."
+        },
+        {
+            "chunk_id": 538,
+            "text": "[23] Paszke, A., Gross, S., Chintala, S., Chanan, G., Yang, E., DeVito, Z., Lin, Z., Desmaison, A., Antiga, L., Lerer, A.: Automatic di\ufb00erentiation in pytorch (2017) [24] Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen,"
+        },
+        {
+            "chunk_id": 539,
+            "text": "., Yang, E., DeVito, Z., Lin, Z., Desmaison, A., Antiga, L., Lerer, A.: Automatic di\ufb00erentiation in pytorch (2017) [24] Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., et al.:"
+        },
+        {
+            "chunk_id": 540,
+            "text": "Antiga, L., Lerer, A.: Automatic di\ufb00erentiation in pytorch (2017) [24] Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., et al.: Pytorch: An imperative style, high-performance"
+        },
+        {
+            "chunk_id": 541,
+            "text": "in pytorch (2017) [24] Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., et al.: Pytorch: An imperative style, high-performance deep learning library. arXiv preprint"
+        },
+        {
+            "chunk_id": 542,
+            "text": "oss, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., et al.: Pytorch: An imperative style, high-performance deep learning library. arXiv preprint arXiv:1912.01703 (2019) [25] Pletschacher, S.,"
+        },
+        {
+            "chunk_id": 543,
+            "text": "anan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., et al.: Pytorch: An imperative style, high-performance deep learning library. arXiv preprint arXiv:1912.01703 (2019) [25] Pletschacher, S., Antonacopoulos, A.: The page (page analysis and"
+        },
+        {
+            "chunk_id": 544,
+            "text": "Antiga, L., et al.: Pytorch: An imperative style, high-performance deep learning library. arXiv preprint arXiv:1912.01703 (2019) [25] Pletschacher, S., Antonacopoulos, A.: The page (page analysis and ground-truth elements) format framework. In: 2010"
+        },
+        {
+            "chunk_id": 545,
+            "text": "high-performance deep learning library. arXiv preprint arXiv:1912.01703 (2019) [25] Pletschacher, S., Antonacopoulos, A.: The page (page analysis and ground-truth elements) format framework. In: 2010 20th International Conference on Pattern"
+        },
+        {
+            "chunk_id": 546,
+            "text": "rXiv preprint arXiv:1912.01703 (2019) [25] Pletschacher, S., Antonacopoulos, A.: The page (page analysis and ground-truth elements) format framework. In: 2010 20th International Conference on Pattern Recognition. pp. 257\u2013260. IEEE (2010)"
+        },
+        {
+            "chunk_id": 547,
+            "text": "[26] Prasad, D., Gadpal, A., Kapadni, K., Visave, M., Sultanpure, K.: Cascadetabnet: An approach for end to end table detection and structure recognition from image- based documents. In: Proceedings of the IEEE/CVF Conference on Computer Vision and"
+        },
+        {
+            "chunk_id": 548,
+            "text": "M., Sultanpure, K.: Cascadetabnet: An approach for end to end table detection and structure recognition from image- based documents. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. pp. 572\u2013573 (2020)"
+        },
+        {
+            "chunk_id": 549,
+            "text": "[27] Qasim, S.R., Mahmood, H., Shafait, F.: Rethinking table recognition using graph neural networks. In: 2019 International Conference on Document Analysis and Recognition (ICDAR). pp. 142\u2013147. IEEE (2019)"
+        },
+        {
+            "chunk_id": 550,
+            "text": "[28] Ren, S., He, K., Girshick, R., Sun, J.: Faster r-cnn: Towards real-time object detection with region proposal networks. In: Advances in neural information processing systems. pp. 91\u201399 (2015)"
+        },
+        {
+            "chunk_id": 551,
+            "text": "[29] Scarselli, F., Gori, M., Tsoi, A.C., Hagenbuchner, M., Monfardini, G.: The graph neural network model. IEEE transactions on neural networks 20(1), 61\u201380 (2008) [30] Schreiber, S., Agne, S., Wolf, I., Dengel, A., Ahmed, S.: Deepdesrt: Deep"
+        },
+        {
+            "chunk_id": 552,
+            "text": "genbuchner, M., Monfardini, G.: The graph neural network model. IEEE transactions on neural networks 20(1), 61\u201380 (2008) [30] Schreiber, S., Agne, S., Wolf, I., Dengel, A., Ahmed, S.: Deepdesrt: Deep learning for detection and structure recognition"
+        },
+        {
+            "chunk_id": 553,
+            "text": "network model. IEEE transactions on neural networks 20(1), 61\u201380 (2008) [30] Schreiber, S., Agne, S., Wolf, I., Dengel, A., Ahmed, S.: Deepdesrt: Deep learning for detection and structure recognition of tables in document images. In: 2017 14th IAPR"
+        },
+        {
+            "chunk_id": 554,
+            "text": "ks 20(1), 61\u201380 (2008) [30] Schreiber, S., Agne, S., Wolf, I., Dengel, A., Ahmed, S.: Deepdesrt: Deep learning for detection and structure recognition of tables in document images. In: 2017 14th IAPR international conference on document analysis and"
+        },
+        {
+            "chunk_id": 555,
+            "text": "., Wolf, I., Dengel, A., Ahmed, S.: Deepdesrt: Deep learning for detection and structure recognition of tables in document images. In: 2017 14th IAPR international conference on document analysis and recognition (ICDAR). vol. 1, pp. 1162\u20131167. IEEE"
+        },
+        {
+            "chunk_id": 556,
+            "text": "ep learning for detection and structure recognition of tables in document images. In: 2017 14th IAPR international conference on document analysis and recognition (ICDAR). vol. 1, pp. 1162\u20131167. IEEE (2017)"
+        },
+        {
+            "chunk_id": 557,
+            "text": "[31] Shen, Z., Zhang, K., Dell, M.: A large dataset of historical japanese documents with complex layouts. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. pp. 548\u2013549 (2020)"
+        },
+        {
+            "chunk_id": 558,
+            "text": "[32] Shen, Z., Zhao, J., Dell, M., Yu, Y., Li, W.: Olala: Object-level active learning\n\nbased layout annotation. arXiv preprint arXiv:2010.01762 (2020)"
+        },
+        {
+            "chunk_id": 559,
+            "text": "[33] Studer, L., Alberti, M., Pondenkandath, V., Goktepe, P., Kolonko, T., Fischer, A., Liwicki, M., Ingold, R.: A comprehensive study of imagenet pre-training for historical document image analysis. In: 2019 International Conference on Document"
+        },
+        {
+            "chunk_id": 560,
+            "text": "., Goktepe, P., Kolonko, T., Fischer, A., Liwicki, M., Ingold, R.: A comprehensive study of imagenet pre-training for historical document image analysis. In: 2019 International Conference on Document Analysis and Recognition (ICDAR). pp. 720\u2013725."
+        },
+        {
+            "chunk_id": 561,
+            "text": "ki, M., Ingold, R.: A comprehensive study of imagenet pre-training for historical document image analysis. In: 2019 International Conference on Document Analysis and Recognition (ICDAR). pp. 720\u2013725. IEEE (2019)"
+        },
+        {
+            "chunk_id": 562,
+            "text": "[34] Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., et al.: Huggingface\u2019s transformers: State-of- the-art natural language processing. arXiv preprint arXiv:1910.03771 (2019) [35]"
+        },
+        {
+            "chunk_id": 563,
+            "text": ", Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., et al.: Huggingface\u2019s transformers: State-of- the-art natural language processing. arXiv preprint arXiv:1910.03771 (2019) [35] Wu, Y., Kirillov, A., Massa, F., Lo, W.Y.,"
+        },
+        {
+            "chunk_id": 564,
+            "text": "T., Louf, R., Funtowicz, M., et al.: Huggingface\u2019s transformers: State-of- the-art natural language processing. arXiv preprint arXiv:1910.03771 (2019) [35] Wu, Y., Kirillov, A., Massa, F., Lo, W.Y., Girshick, R.: Detectron2. https://"
+        },
+        {
+            "chunk_id": 565,
+            "text": "github.com/facebookresearch/detectron2 (2019)"
+        },
+        {
+            "chunk_id": 566,
+            "text": "[36] Xu, Y., Xu, Y., Lv, T., Cui, L., Wei, F., Wang, G., Lu, Y., Florencio, D., Zhang, C., Che, W., et al.: Layoutlmv2: Multi-modal pre-training for visually-rich document understanding. arXiv preprint arXiv:2012.14740 (2020)"
+        },
+        {
+            "chunk_id": 567,
+            "text": "[37] Xu, Y., Li, M., Cui, L., Huang, S., Wei, F., Zhou, M.: Layoutlm: Pre-training of"
+        },
+        {
+            "chunk_id": 568,
+            "text": "text and layout for document image understanding (2019)"
+        },
+        {
+            "chunk_id": 569,
+            "text": "[38] Zhong, X., Tang, J., Yepes, A.J.: Publaynet:\n\nlargest dataset ever for doc- In: 2019 International Conference on Document IEEE (Sep 2019)."
+        },
+        {
+            "chunk_id": 570,
+            "text": "ument Analysis and Recognition (ICDAR). pp. 1015\u20131022. https://doi.org/10.1109/ICDAR.2019.00166"
+        },
+        {
+            "chunk_id": 571,
+            "text": "layout analysis."
+        }
+    ]
+}
