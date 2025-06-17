@@ -1,7 +1,7 @@
 # This is a personal version of the doc_chunker POC project.
 
 
-#doc_chunker
+# doc_chunker  
 Implementatiion of document chunker using unstructured.io and fastapi
 
 **main.py** contains the fastapi app.
