@@ -2,7 +2,7 @@
 
 
 # doc_chunker  
-Implementatiion of document chunker using unstructured.io and fastapi
+Implementation of document chunker using unstructured.io and fastapi
 
 **main.py** contains the fastapi app.
 
