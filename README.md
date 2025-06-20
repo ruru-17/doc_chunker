@@ -11,3 +11,5 @@ Implementation of document chunker using unstructured.io and fastapi
 **requirements.txt** can definitely be trimmed down a lot.
 
 **files** contains over 800 chunking examples on different files and different parameter configurations.
+
+Update: More examples with use case oriented documents added
